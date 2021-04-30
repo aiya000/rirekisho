@@ -4,35 +4,104 @@
 
 |key|value|
 |---|-----|
-|Name|ふー　ばー (Foo Bar)|
-|Blog|[ふーばーブログ](http://foobar.blog.com)|
-|Twitter|[@foobar](https://twitter.com/foobar)|
+|Name|aiya000（あいや）|
+|GitHub|[aiya000](https://github.com/aiya000)|
+|Qiita|[aiya000](https://qiita.com/aiya000)|
+|Blog|[galaxy-sixth-sensey](https://aiya000.github.io)|
+|Twitter|[@public\_ai000ya](https://twitter.com/public_ai000ya)|
 
 ## スキル
 ### 言語
-- Ruby
-- PHP
+
+- Haskell
+- TypeScript
+- Scala
+- Kotlin
+- Python3
+- HTML
+- CSS
+- Sass
+- Elm
+- C++（11, 14, 17）
 - Java
-- などなど
+- C#
+- Unity
+- ShellScript（bash, zsh）
+- Vim script
+- Re:VIEW
 
 ### フレームワーク
 
-- Ruby on Rails
-- Laravel
-- Spring Boot
-- などなど
+- Haskell
+    - Servant
+    - megaparsec
+    - lens
+    - など
+
+- TypeScript
+    - Nuxt.js
+    - Vue.js
+    - NativeScript-Vue
+    - node.js
+    - [probot](https://github.com/probot/probot)
+    - [Express.js](https://expressjs.com/ja/)
+
+- Kotlin
+    - AndroidSDK
+
+- Java
+    - AndroidSDK
+
+- C#
+    - WPF
+    - [UdonSharp](https://github.com/MerlinVR/UdonSharp)
+
+- Unity
+    - VRCSDK3（Avatar・World）
 
 ### その他
 
-- 言語やフレームワークに限らないスキル。開発手法やプロセス、ツールなど
+- フロントエンド: 経験2年
+- バックエンド: 経験3年 <!-- 某有名社のあの音をアレする案件 -->
+- フルスタック: 経験5年
+
+- アジャイル・スクラム開発
+
+- GitHub
+    - GitHub Actions
+    - GitHub Apps
+    - GitHub Releases
+
+- Firebase
+    - Firestore
+    - Authentication
+    - Storage
+    - Hosting
+    - それぞれのrules
+
+- 数学（少し）
+    - 圏論
+        - かわいい入門書を頒布中「せつラボ ～圏論の基本～」
+            - [紙版 + 電子版](https://aiya000.booth.pm/items/1316747)
+            - [電子版オンリー](https://aiya000.booth.pm/items/1298622)
+    - 代数的構造
+        - かわいい入門書を頒布中「矢澤にこ先輩といっしょに代数！」
+            - [紙版 + 電子版](https://aiya000.booth.pm/items/1575006)
+            - [電子版オンリー](https://aiya000.booth.pm/items/1040121)
+
+## 登壇履歴
+
+- [Haskell Day 2019](https://techplay.jp/event/727059)
 
 ## 言語
 
 - 日本語
   - ネイティブ
+
 - 英語
-  - かんたんな日常会話ができる
-  - TOEIC: xxx点
+  - 書きOK
+  - 読みOK
+  - 聞き&話し NG
 
 ## 強み
 
