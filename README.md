@@ -115,6 +115,10 @@
     - Hosting
     - それぞれのrules
 
+- 文章作成
+    - 専門書の執筆（後述）
+    - その他: Qiita, ブログ事
+
 - 数学
     - **圏論**
         - かわいい入門書を頒布中「せつラボ ～圏論の基本～」
@@ -163,20 +167,34 @@
 - その他、新しいもの
 
 ## 職務経歴
+### yyyy/mm ～ 現在 : E社
+
+- 職務
+    - フロントエンド
+    - バックエンド（Serverless Architecture = Firebase）
+
+#### 某大手企業の開発に伴って、周辺開発環境の構築・開発
+
+<!--
+職務内容の詳細を箇条書きでかく
+-->
+
+- GitHub Actionsを使用した、CI環境の構築
+- GitHub Appsを使用した、GitHub運用の部分的な自動化
+    - 例
+        - Organization化の、リポジトリ作成権限を持つユーザーがリポジトリを作成した際、その直後にリポジトリ管理権限を停止する [^corp-e-works-example-a]
+        - リポジトリ作成時の、GitHubテンプレートの自動展開 [^corp-e-works-example-b]
+
+[^corp-e-works-example-a]: リポジトリ作成権限を持たせながら、リポジトリ管理権限は持たせたくないため。
+[^corp-e-works-example-b]: [テンプレートリポジトリ](https://docs.github.com/ja/github/creating-cloning-and-archiving-repositories/creating-a-template-repository)を使用することも考えられたが、リポジトリ作成後はそれぞれのプロジェクトでカスタムしたいとのことだった。
+
+#### TODO
+
+### yyyy/mm ～ yyyy/mm: A社
+
+- 職務: フルスタックエンジニア
 
 TODO
-
-### yyyy/mm - 現在 : 会社名
-
-職務: Webアプリケーションエンジニア（例）
-
-#### 職務内容の名前（レストラン検索とか）
-
-- 職務内容の詳細を箇条書きでかく
-
-### yyyy/mm - yyyy/mm: （前職の企業名。あれば）
-
-職務: サーバーサイドエンジニア
 
 #### 職務内容の名前（レストラン検索とか）
 
