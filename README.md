@@ -81,7 +81,7 @@
     - Hosting
     - それぞれのrules
 
-- 数学（少し）
+- 数学
     - 圏論
         - かわいい入門書を頒布中「せつラボ ～圏論の基本～」
             - [紙版 + 電子版](https://aiya000.booth.pm/items/1316747)
@@ -90,30 +90,6 @@
         - かわいい入門書を頒布中「矢澤にこ先輩といっしょに代数！」
             - [紙版 + 電子版](https://aiya000.booth.pm/items/1575006)
             - [電子版オンリー](https://aiya000.booth.pm/items/1040121)
-
-## 登壇・イベント 履歴
-
-| イベント名 | 参加枠 | 発表資料 |
-|:-:|:-:|:-:|
-| [VimConf 2019](https://vimconf.org/2019) | 運営, LT | [Time script - Strong Static Typing with Vim script -](https://aiya000.github.io/Maid/about-time-script) |
-| [VimConf 2017](https://vimconf.org/2017) | 懇談会LT | [Either Monad in Vim script](https://aiya000.github.io/Maid/either-monad-in-vim-script) |
-| [VimConf 2016](https://vimconf.org/2016) | 発表  | [僕の友達を紹介するよ - 僕の開発用プラグイン達](https://aiya000.github.io/Maid/my-vim-friends) |
-| [.vimconf.swp.2018](https://vimconf.connpass.com/event/102292) | 発表  | [僕の推しVimプラグインを見て！](https://aiya000.github.io/Maid/vimconf.swp.2018) |
-| [Haskell Day 2019](https://techplay.jp/event/727059) | 運営, 発表 | [「しんさんきぼう」GHCのderivingテクノロジー](https://aiya000.github.io/Maid/haskell-day-2019-deriving) |
-| [Haskell Day 2018](https://haskell-jp.connpass.com/event/92617) | 運営, 発表 | [Semigroupとは？ Monoid？ 環？](https://aiya000.github.io/Maid/haskell-day-2019-deriving) |
-| [ML Day#2](https://ml-lang.connpass.com/event/94284) | LT枠 | [Haskellで依存型とコンパイル時インラインLisp](https://aiya000.github.io/Maid/lisp-on-haskell-in-compile-time) |
-| [Haskell入門ハンズオン！](https://shinjukuhs.connpass.com/event/58224) | メンター枠 | |
-
-## 参加イベント
-
-- [技術書典7](https://techbookfest.org/event/tbf07/circle/5762742296248320)
-- [技術書典6](https://techbookfest.org/event/tbf06/circle/63720004)
-- [技術書典5](https://techbookfest.org/event/tbf05/circle/43260001)
-
-## その他 発表資料
-
-- [aiya000.github.io/Maid](https://aiya000.github.io/Maid)
-- [slideshare](https://www.slideshare.net/aiya000)
 
 ## 言語
 
@@ -126,9 +102,37 @@
 
 ## 強み
 
+TODO
+
 ## やったことはないが興味があるもの
 
+TODO
+
+## 課外活動
+
+| イベント名 | 参加枠 | 発表資料 |
+|:-:|:-:|:-:|
+| [VimConf 2019](https://vimconf.org/2019) | 運営, LT | [Time script - Strong Static Typing with Vim script -](https://aiya000.github.io/Maid/about-time-script) |
+| [VimConf 2017](https://vimconf.org/2017) | 懇談会LT | [Either Monad in Vim script](https://aiya000.github.io/Maid/either-monad-in-vim-script) |
+| [VimConf 2016](https://vimconf.org/2016) | 発表  | [僕の友達を紹介するよ - 僕の開発用プラグイン達](https://aiya000.github.io/Maid/my-vim-friends) |
+| [.vimconf.swp.2018](https://vimconf.connpass.com/event/102292) | 発表  | [僕の推しVimプラグインを見て！](https://aiya000.github.io/Maid/vimconf.swp.2018) |
+| [Haskell Day 2019](https://techplay.jp/event/727059) | 運営, 発表 | [「しんさんきぼう」GHCのderivingテクノロジー](https://aiya000.github.io/Maid/haskell-day-2019-deriving) |
+| [Haskell Day 2018](https://haskell-jp.connpass.com/event/92617) | 運営, 発表 | [Semigroupとは？ Monoid？ 環？](https://aiya000.github.io/Maid/haskell-day-2019-deriving) |
+| [ML Day#2](https://ml-lang.connpass.com/event/94284) | LT枠 | [Haskellで依存型とコンパイル時インラインLisp](https://aiya000.github.io/Maid/lisp-on-haskell-in-compile-time) |
+| [Haskell入門ハンズオン！](https://shinjukuhs.connpass.com/event/58224) | メンター枠 | |
+
+- [技術書典7 - galaxy-sixth-sensey](https://techbookfest.org/event/tbf07/circle/5762742296248320)
+- [技術書典6 - galaxy-sixth-sensey](https://techbookfest.org/event/tbf06/circle/63720004)
+- [技術書典5 - galaxy-sixth-sensey](https://techbookfest.org/event/tbf05/circle/43260001)
+
+## その他 発表資料
+
+- [aiya000.github.io/Maid](https://aiya000.github.io/Maid)
+- [slideshare](https://www.slideshare.net/aiya000)
+
 ## 職務経歴
+
+TODO
 
 ### yyyy/mm - 現在 : 会社名
 
@@ -145,22 +149,3 @@
 #### 職務内容の名前（レストラン検索とか）
 
 - 職務内容の詳細を箇条書きでかく
-
-## 課外活動
-
-### 社外プロジェクト
-* [運営に携わっているコミュニティ](そのコミュニティのconnpassやカンファレンスページのリンクとか)
-* [副業で携わっているサービス](そのサービスのランディングページのリンクとか)
-
-### 過去の登壇資料
-* [Speaker Deck](Speaker Deckの自分の資料のページとか)
-
-### 受賞歴
-* [イベント名と受賞した賞](イベントのランディングページのリンクや、結果がわかる記事など)
-
-### 執筆歴
-* [書籍の名前](Amazonのリンクとか)
-* [Qiita](Qiitaの自分のプロフィールのリンクとか)
-* [ネットメディアの記事](記事のリンクとか)
-* [SoftwareDesignやWEB+DBのこの月の特集](その月のアーカイブのリンクとか)
-* [技術系同人誌](boothのリンクとか自分のサイトの紹介リンクとか)
