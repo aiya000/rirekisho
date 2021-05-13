@@ -183,12 +183,10 @@
     - その他、人間的な**可読性の担保**
 
 - **GitHub**
-    - Issue駆動開発 [^what-is-issue-driven-development]・gitフロー・GitHubフロー・混合フロー
+    - Issue駆動開発（[※1](#what-is-issue-driven-development)）・gitフロー・GitHubフロー・混合フロー
     - GitHub Actions
     - GitHub Apps
     - GitHub Releases
-
-[^what-is-issue-driven-development]: 1つのIssueに対してn（`0 <= n`）個のPRを作成・紐付けを行い、開発を継続していくスタイル。
 
 - CSS
     - レスポンシブデザイン
@@ -307,9 +305,7 @@ Vue.jsの社内採用に先駆けて、Vue.jsの研究目的で、社内アプ�
 
 こちらでもレスポンシブデザインでコーディングしました。
 
-<a name="works-github-ci"></a>
-
-#### GitHub周辺開発環境の構築・開発
+#### <a name="works-github-ci">GitHub周辺開発環境の構築・開発</a>
 
 某大手企業の開発業務を支援するため、GitHub Actionsを使用した、CI環境の構築を行いました。
 
@@ -327,11 +323,8 @@ Vue.jsの社内採用に先駆けて、Vue.jsの研究目的で、社内アプ�
 
 - GitHub Appsを使用した、GitHub運用の部分的な自動化
     - 例
-        - Organization化の、リポジトリ作成権限を持つユーザーがリポジトリを作成した際、その直後にリポジトリ管理権限を停止する [^corp-e-works-example-a]
-        - リポジトリ作成時の、GitHubテンプレートの自動展開 [^corp-e-works-example-b]
-
-[^corp-e-works-example-a]: リポジトリ作成権限を持たせながら、リポジトリ管理権限は持たせたくないため。
-[^corp-e-works-example-b]: [テンプレートリポジトリ](https://docs.github.com/ja/github/creating-cloning-and-archiving-repositories/creating-a-template-repository)を使用することも考えられましたが、リポジトリ作成後はそれぞれのプロジェクトでカスタムしたいとのことでした。
+        - Organization化の、リポジトリ作成権限を持つユーザーがリポジトリを作成した際、その直後にリポジトリ管理権限を停止する [※2](#corp-e-works-example-a)
+        - リポジトリ作成時の、GitHubテンプレートの自動展開 [※3](#corp-e-works-example-b)
 
 またgitに疎い作業者（管理者・プログラマー）のために、本環境のためのgit・GitHub運用マニュアルを作成しました。
 
@@ -426,3 +419,15 @@ Python3から[Audio Weaver](https://w.dspconcepts.com/audio-weaver) Serverにリ
     - テキストのスクロールスピード
     - 画像のフェードアウト・表示・フェードインのスピード
     - それらが同時に終了するように、時間を調整する
+
+- - - - -
+- - - - -
+- - - - -
+
+#### footnote
+
+<a name="what-is-issue-driven-development">※1</a>: 1つのIssueに対してn（`0 <= n`）個のPRを作成・紐付けを行い、開発を継続していくスタイル。
+
+<a name="corp-e-works-example-a">※2</a>: リポジトリ作成権限を持たせながら、リポジトリ管理権限は持たせたくないため。
+
+<a name="corp-e-works-example-b">※3</a>: [テンプレートリポジトリ](https://docs.github.com/ja/github/creating-cloning-and-archiving-repositories/creating-a-template-repository)を使用することも考えられましたが、リポジトリ作成後はそれぞれのプロジェクトでカスタムしたいとのことでした。
