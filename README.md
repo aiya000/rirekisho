@@ -27,10 +27,11 @@
     - [高校生の研修を引率し、Androidアプリを作成](#%E9%AB%98%E6%A0%A1%E7%94%9F%E3%81%AE%E7%A0%94%E4%BF%AE%E3%82%92%E5%BC%95%E7%8E%87%E3%81%97android%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E6%88%90)
     - [工事現場のマネジメント用Windowsアプリ開発](#%E5%B7%A5%E4%BA%8B%E7%8F%BE%E5%A0%B4%E3%81%AE%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88%E7%94%A8windows%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA)
     - [A社設立記念5周年セレモニーで上映するエンディング映像を作成](#a%E7%A4%BE%E8%A8%AD%E7%AB%8B%E8%A8%98%E5%BF%B55%E5%91%A8%E5%B9%B4%E3%82%BB%E3%83%AC%E3%83%A2%E3%83%8B%E3%83%BC%E3%81%A7%E4%B8%8A%E6%98%A0%E3%81%99%E3%82%8B%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E6%98%A0%E5%83%8F%E3%82%92%E4%BD%9C%E6%88%90)
+    - [footnote](#footnote)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## 基本情報
+# 基本情報
 
 |key|value|
 |---|-----|
@@ -42,7 +43,7 @@
 |Booth|[galaxy-sixth-sensey](https://aiya000.booth.pm)|
 |技術書典|[galaxy-sixth-sensey](https://techbookfest.org/organization/5648161435549696)|
 
-## 課外活動
+# 課外活動
 
 | イベント名 | 参加枠 | 発表資料 |
 |:-:|:-:|:-:|
@@ -59,7 +60,7 @@
 - [技術書典6 - galaxy-sixth-sensey](https://techbookfest.org/event/tbf06/circle/63720004)
 - [技術書典5 - galaxy-sixth-sensey](https://techbookfest.org/event/tbf05/circle/43260001)
 
-### その他
+## その他
 
 - Isucon2019参加
 
@@ -76,8 +77,8 @@
 - [aiya000.github.io/Maid](https://aiya000.github.io/Maid)
 - [スライド置き場 - slideshare](https://www.slideshare.net/aiya000)
 
-## スキル
-### プログラミング言語（非チューリング完全含む）
+# スキル
+## プログラミング言語（非チューリング完全含む）
 
 <!-- なぜこのように区分されているかわかったあなたとは、友達になれる気がする！ -->
 
@@ -87,7 +88,7 @@
 - HTML, CSS, Sass, Markdown (CommonMark, GitHub Flavor Markdown, Qiita Markdown), Re:VIEW
 - json, json5, yaml, GraphQL
 
-### フレームワーク
+## フレームワーク
 
 - Haskell
     - Servant
@@ -155,7 +156,7 @@
 - CSS
     - Bootstrap (version4, 5)
 
-### 強み・技能（特定のフレームワークによらない）
+## 強み・技能（特定のフレームワークによらない）
 
 - フロントエンド（2018より）
 - フルスタック（2014より）
@@ -219,7 +220,7 @@
     - Vim script処理系 - [Time script](https://github.com/aiya000/hs-time-script)
     - Lisp処理系 - [zuramaru](https://github.com/aiya000/hs-zuramaru)
 
-## 自然言語
+# 自然言語
 
 - 日本語
   - ネイティブ
@@ -228,15 +229,15 @@
   - :o: 書き・読み
   - :x: 聞き・話し
 
-## やったことはないが興味があるもの
+# やったことはないが興味があるもの
 
 - Rust, [Gleam](https://gleam.run/), [PureScript](https://www.purescript.org/)
 - [Svelte](https://svelte.dev/), [React](https://ja.reactjs.org/), ReactNative, [Next.js](https://nextjs.org/)
 - AWS
 - その他、新しいもの
 
-## 職務経歴
-### 2018-04 ～ 現在 : E社
+# 職務経歴
+## 2018-04 ～ 現在 : E社
 
 - 職務
     - フロントエンド
@@ -247,7 +248,9 @@
 ↑ older  
 ↓ newer
 
-#### 某ぬいぐるみロボットの設定ソフトを開発
+- - -
+
+### 某ぬいぐるみロボットの設定ソフトを開発
 
 某ホテル会社の店舗に設置する「ぬいぐるみロボット」の挙動を、httpで通信するWindows向けデスクトップアプリを開発しました。
 
@@ -260,7 +263,9 @@ WPFプロジェクトにも関わらずMVVMでコーディングされていな�
 
 - MVVM
 
-#### 音声加工技術の開発を支援
+- - -
+
+### 音声加工技術の開発を支援
 
 某大手企業の音声加工技術のバックエンド開発に携わりました。
 
@@ -272,7 +277,9 @@ WPFプロジェクトにも関わらずMVVMでコーディングされていな�
 
 テストでは、既存のコードがDRY原則に則っていなかったので、`template`や関数分割を用いてDRYの遵守に務めました。
 
-#### ヘルスケア系iOSアプリの修正
+- - -
+
+### ヘルスケア系iOSアプリの修正
 
 短期間ではありますが、既存のヘルスケア系iOS・Androidアプリの修正を行いました。
 
@@ -282,7 +289,9 @@ WPFプロジェクトにも関わらずMVVMでコーディングされていな�
 - Java
     - AndroidSDK
 
-#### 某社の公式Webサイトをリニューアル
+- - -
+
+### 某社の公式Webサイトをリニューアル
 
 某社から「公式サイトを一新したい」との依頼を受け、受託しました。
 
@@ -296,7 +305,9 @@ CSSフレームワークにはBootstrapを用いました。
 
 - レスポンシブデザイン
 
-#### 社内アプリ開発
+- - -
+
+### 社内アプリ開発
 
 Vue.jsの社内採用に先駆けて、Vue.jsの研究目的で、社内アプリ（TODOアプリ）を開発しました。
 
@@ -305,7 +316,11 @@ Vue.jsの社内採用に先駆けて、Vue.jsの研究目的で、社内アプ�
 
 こちらでもレスポンシブデザインでコーディングしました。
 
-#### <a name="works-github-ci">GitHub周辺開発環境の構築・開発</a>
+- - -
+
+<a name="works-github-ci"></a>
+
+### GitHub周辺開発環境の構築・開発
 
 某大手企業の開発業務を支援するため、GitHub Actionsを使用した、CI環境の構築を行いました。
 
@@ -330,7 +345,9 @@ Vue.jsの社内採用に先駆けて、Vue.jsの研究目的で、社内アプ�
 
 - 文章作成
 
-#### Audio Weaver向けPython3ライブラリを開発
+- - -
+
+### Audio Weaver向けPython3ライブラリを開発
 
 案件としては[前述](#works-github-ci)と同じ扱いですが、別のタスクなので分けて記述します。
 
@@ -341,7 +358,7 @@ Python3から[Audio Weaver](https://w.dspconcepts.com/audio-weaver) Serverにリ
 - mypy, typing: 漸進的型付け
 - dataclass, ABC（抽象クラス）
 
-### 2014-04 ～ 2016-10: A社
+## 2014-04 ～ 2016-10: A社
 
 - 職務: フルスタックエンジニア
 
@@ -350,7 +367,9 @@ Python3から[Audio Weaver](https://w.dspconcepts.com/audio-weaver) Serverにリ
 ↑ older  
 ↓ newer
 
-#### 社用メールサーバーの構築
+- - -
+
+### 社用メールサーバーの構築
 
 記念すべき初めての業務として、なぜか社員が広く使うためのメールサーバーを、オンプレミスで構築することになりました。
 
@@ -366,7 +385,9 @@ Python3から[Audio Weaver](https://w.dspconcepts.com/audio-weaver) Serverにリ
 
 オンプレミスのリスクを深く認識する、貴重な機会になりました。
 
-#### 高校生の研修を引率し、Androidアプリを作成
+- - -
+
+### 高校生の研修を引率し、Androidアプリを作成
 
 新社会人の新社員として研修を受けるのではなく、なぜか高校生の研修をすることになりました。
 
@@ -385,7 +406,9 @@ Python3から[Audio Weaver](https://w.dspconcepts.com/audio-weaver) Serverにリ
 - 日記本文の作成
 - 日記への画像挿入
 
-#### 工事現場のマネジメント用Windowsアプリ開発
+- - -
+
+### 工事現場のマネジメント用Windowsアプリ開発
 
 工事会社からの受託契約で、ヒアリング・外部設計から内部設計・開発全てを担当しました。
 
@@ -402,7 +425,9 @@ Python3から[Audio Weaver](https://w.dspconcepts.com/audio-weaver) Serverにリ
 
 以降、Windows Formsでの開発はやめ、WPFを使用するようになりました。
 
-#### A社設立記念5周年セレモニーで上映するエンディング映像を作成
+- - -
+
+### A社設立記念5周年セレモニーで上映するエンディング映像を作成
 
 映像を作成といっても動画制作をしたわけではなく、エンディング映像を表示するためのWebアプリを作成しました。
 
@@ -424,7 +449,7 @@ Python3から[Audio Weaver](https://w.dspconcepts.com/audio-weaver) Serverにリ
 - - - - -
 - - - - -
 
-#### footnote
+### footnote
 
 <a name="what-is-issue-driven-development">※1</a>: 1つのIssueに対してn（`0 <= n`）個のPRを作成・紐付けを行い、開発を継続していくスタイル。
 
