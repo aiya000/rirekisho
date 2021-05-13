@@ -3,6 +3,7 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+
 - [基本情報](#%E5%9F%BA%E6%9C%AC%E6%83%85%E5%A0%B1)
 - [課外活動](#%E8%AA%B2%E5%A4%96%E6%B4%BB%E5%8B%95)
   - [その他](#%E3%81%9D%E3%81%AE%E4%BB%96)
@@ -14,10 +15,18 @@
 - [強み](#%E5%BC%B7%E3%81%BF)
 - [やったことはないが興味があるもの](#%E3%82%84%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8%E3%81%AF%E3%81%AA%E3%81%84%E3%81%8C%E8%88%88%E5%91%B3%E3%81%8C%E3%81%82%E3%82%8B%E3%82%82%E3%81%AE)
 - [職務経歴](#%E8%81%B7%E5%8B%99%E7%B5%8C%E6%AD%B4)
-  - [yyyy/mm - 現在 : 会社名](#yyyymm---%E7%8F%BE%E5%9C%A8--%E4%BC%9A%E7%A4%BE%E5%90%8D)
-    - [職務内容の名前（レストラン検索とか）](#%E8%81%B7%E5%8B%99%E5%86%85%E5%AE%B9%E3%81%AE%E5%90%8D%E5%89%8D%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E6%A4%9C%E7%B4%A2%E3%81%A8%E3%81%8B)
-  - [yyyy/mm - yyyy/mm: （前職の企業名。あれば）](#yyyymm---yyyymm-%E5%89%8D%E8%81%B7%E3%81%AE%E4%BC%81%E6%A5%AD%E5%90%8D%E3%81%82%E3%82%8C%E3%81%B0)
-    - [職務内容の名前（レストラン検索とか）](#%E8%81%B7%E5%8B%99%E5%86%85%E5%AE%B9%E3%81%AE%E5%90%8D%E5%89%8D%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E6%A4%9C%E7%B4%A2%E3%81%A8%E3%81%8B-1)
+  - [2018-04 ～ 現在 : E社](#2018-04--%E7%8F%BE%E5%9C%A8--e%E7%A4%BE)
+    - [某ぬいぐるみロボットの設定ソフトを開発](#%E6%9F%90%E3%81%AC%E3%81%84%E3%81%90%E3%82%8B%E3%81%BF%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%82%BD%E3%83%95%E3%83%88%E3%82%92%E9%96%8B%E7%99%BA)
+    - [音声加工技術の開発を支援](#%E9%9F%B3%E5%A3%B0%E5%8A%A0%E5%B7%A5%E6%8A%80%E8%A1%93%E3%81%AE%E9%96%8B%E7%99%BA%E3%82%92%E6%94%AF%E6%8F%B4)
+    - [ヘルスケア系iOSアプリの修正](#%E3%83%98%E3%83%AB%E3%82%B9%E3%82%B1%E3%82%A2%E7%B3%BBios%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AE%E4%BF%AE%E6%AD%A3)
+    - [某社の公式Webサイトをリニューアル](#%E6%9F%90%E7%A4%BE%E3%81%AE%E5%85%AC%E5%BC%8Fweb%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E3%83%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A2%E3%83%AB)
+    - [社内アプリ開発](#%E7%A4%BE%E5%86%85%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA)
+    - [GitHub周辺開発環境の構築・開発](#github%E5%91%A8%E8%BE%BA%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89%E3%83%BB%E9%96%8B%E7%99%BA)
+  - [2014-04 ～ 2016-10: A社](#2014-04--2016-10-a%E7%A4%BE)
+    - [社用メールサーバーの構築](#%E7%A4%BE%E7%94%A8%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E6%A7%8B%E7%AF%89)
+    - [高校生の研修を引率し、Androidアプリを作成](#%E9%AB%98%E6%A0%A1%E7%94%9F%E3%81%AE%E7%A0%94%E4%BF%AE%E3%82%92%E5%BC%95%E7%8E%87%E3%81%97android%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E6%88%90)
+    - [工事現場のマネジメント用Windowsアプリ開発](#%E5%B7%A5%E4%BA%8B%E7%8F%BE%E5%A0%B4%E3%81%AE%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88%E7%94%A8windows%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA)
+    - [A社設立記念5周年セレモニーで上映するエンディング映像を作成](#a%E7%A4%BE%E8%A8%AD%E7%AB%8B%E8%A8%98%E5%BF%B55%E5%91%A8%E5%B9%B4%E3%82%BB%E3%83%AC%E3%83%A2%E3%83%8B%E3%83%BC%E3%81%A7%E4%B8%8A%E6%98%A0%E3%81%99%E3%82%8B%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E6%98%A0%E5%83%8F%E3%82%92%E4%BD%9C%E6%88%90)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -61,7 +70,7 @@
 <!-- なぜこのように区分されているかわかったあなたとは、友達になれる気がする！ -->
 
 - **Haskell**, Scala, Kotlin, Elm
-- TypeScript, Java, C++(11, 14, 17), C#
+- **TypeScript**, Java, C++(11, 14, 17), C#
 - Python3, Clojure, bash, zsh, Vim script
 - HTML, CSS, Sass, Re:VIEW
 
@@ -71,17 +80,27 @@
     - Servant
     - rio
     - mtl
-    - megaparsec
+    - **megaparsec**
     - **lens**
     - など
 
 - TypeScript
     - **Nuxt.js**
-    - Vue.js
+        - typed-vuex
+        - nuxt-property-decorator
+    - Vue.js (2)
+        - vuex
+        - vue-router
+        - vue-property-decorator
+        - vue-test-utils
+        - BootstrapVue
+        - eslint-vue-plugin
     - NativeScript-Vue
     - node.js
     - [probot](https://github.com/probot/probot)
     - [Express.js](https://expressjs.com/ja/)
+    - eslint
+    - prettier
 
 - Kotlin
     - AndroidSDK
@@ -94,6 +113,10 @@
     - Unity
         - VRCSDK3（Avatar・World）
         - [UdonSharp](https://github.com/MerlinVR/UdonSharp)
+    - Windows Forms
+
+- CSS
+    - Bootstrap (4, 5)
 
 ### その他
 
@@ -103,6 +126,8 @@
 
 - アジャイル・スクラム開発
 - Test Driven Development
+    - doctest
+    - Property Based Testing
 
 - **GitHub**
     - GitHub Actions
@@ -116,9 +141,8 @@
     - Hosting
     - それぞれのrules
 
-- 文章作成
-    - 専門書の執筆（後述）
-    - その他: Qiita, ブログ事
+- CSS
+    - レスポンシブデザイン
 
 - 数学
     - **圏論**
@@ -130,6 +154,10 @@
             - [紙版 + 電子版](https://aiya000.booth.pm/items/1575006)
             - [電子版オンリー](https://aiya000.booth.pm/items/1040121)
 
+- 文章作成
+    - **専門書の執筆**（上述）
+    - その他: Qiita, ブログ事
+
 - プログラミング言語開発
     - Vim script処理系 - [Time script](https://github.com/aiya000/hs-time-script)
     - Lisp処理系 - [zuramaru](https://github.com/aiya000/hs-zuramaru)
@@ -140,8 +168,8 @@
   - ネイティブ
 
 - 英語
-  - :o: 書き, 読み
-  - :x: 聞き, 話し
+  - :o: 書き・読み
+  - :x: 聞き・話し
 
 ## 強み
 
@@ -178,22 +206,91 @@
 
 以下、時系列順。
 
-#### 某大手企業の開発に伴って、周辺開発環境の構築・開発
+#### 某ぬいぐるみロボットの設定ソフトを開発
 
-<!--
-職務内容の詳細を箇条書きでかく
--->
+某ホテル会社の店舗に設置する「ぬいぐるみロボット」の挙動を、httpで通信するWindows向けデスクトップアプリを開発しました。
 
-- GitHub Actionsを使用した、CI環境の構築
+- C#
+- WPF
+
+本プロジェクトには途中参加しました。
+
+WPFプロジェクトにも関わらずMVVMでコーディングされていなかったため、まずはリファクタリングから担当を始めました。
+
+- MVVM
+
+#### 音声加工技術の開発を支援
+
+某大手企業の音声加工技術の開発に携わりました。
+
+そこでは主に不具合の調査・テストを担当しました。
+
+- C++11
+
+不具合の調査では、プログラミング言語マニアとしての能力を用いて、コーダーが仕様を誤解している箇所を多く発見しました。
+
+テストでは、既存のコードがDRY原則に則っていなかったので、`template`や関数分割を用いてDRYの遵守に務めました。
+
+#### ヘルスケア系iOSアプリの修正
+
+短期間ではありますが、既存のヘルスケア系iOS・Androidアプリの修正を行いました。
+
+- Swift
+    - Xcode
+
+- Java
+    - AndroidSDK
+
+#### 某社の公式Webサイトをリニューアル
+
+某社から「公式サイトを一新したい」との依頼を受け、受託しました。
+
+ロジックが全くない、広報用途のサイトであったため、シンプルなCMSとしてJekyllを用いました。
+CSSフレームワークにはBootstrapを用いました。
+
+- Jekyll
+- Bootstrap4
+
+またモバイル端末とタブレット端末へのレスポンシブ対応を行いました。
+
+- レスポンシブデザイン
+
+#### 社内アプリ開発
+
+Vue.jsの社内採用に先駆けて、Vue.jsの研究目的で、社内アプリ（TODOアプリ）を開発しました。
+
+- Vue.js (2)
+- BootstrapVue
+
+こちらでもレスポンシブデザインでコーディングしました。
+
+#### GitHub周辺開発環境の構築・開発
+
+某大手企業の開発業務を支援するため、GitHub Actionsを使用した、CI環境の構築を行いました。
+
+- TypeScript
+- node.js
+- probot + octokit
+
+- GitHub
+    - GitHub Actions
+    - GitHub Apps
+    - GitHub templates
+    - etc
+
+下記の機能を持っていました。
+
 - GitHub Appsを使用した、GitHub運用の部分的な自動化
     - 例
         - Organization化の、リポジトリ作成権限を持つユーザーがリポジトリを作成した際、その直後にリポジトリ管理権限を停止する [^corp-e-works-example-a]
         - リポジトリ作成時の、GitHubテンプレートの自動展開 [^corp-e-works-example-b]
 
 [^corp-e-works-example-a]: リポジトリ作成権限を持たせながら、リポジトリ管理権限は持たせたくないため。
-[^corp-e-works-example-b]: [テンプレートリポジトリ](https://docs.github.com/ja/github/creating-cloning-and-archiving-repositories/creating-a-template-repository)を使用することも考えられたが、リポジトリ作成後はそれぞれのプロジェクトでカスタムしたいとのことだった。
+[^corp-e-works-example-b]: [テンプレートリポジトリ](https://docs.github.com/ja/github/creating-cloning-and-archiving-repositories/creating-a-template-repository)を使用することも考えられましたが、リポジトリ作成後はそれぞれのプロジェクトでカスタムしたいとのことでした。
 
-#### TODO
+またgitに疎い作業者（管理者・プログラマー）のために、本環境のためのgit・GitHub運用マニュアルを作成しました。
+
+- 文章作成
 
 ### 2014-04 ～ 2016-10: A社
 
@@ -258,6 +355,7 @@
 映像を作成といっても動画制作をしたわけではなく、エンディング映像を表示するためのWebアプリを作成しました。
 
 - AngularJS 1
+    - MVC
 - html
 - css
 
