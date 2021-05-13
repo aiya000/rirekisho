@@ -10,9 +10,8 @@
 - [スキル](#%E3%82%B9%E3%82%AD%E3%83%AB)
   - [プログラミング言語（非チューリング完全含む）](#%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E%E9%9D%9E%E3%83%81%E3%83%A5%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E5%AE%8C%E5%85%A8%E5%90%AB%E3%82%80)
   - [フレームワーク](#%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF)
-  - [その他](#%E3%81%9D%E3%81%AE%E4%BB%96-1)
+  - [強み・技能（特定のフレームワークによらない）](#%E5%BC%B7%E3%81%BF%E3%83%BB%E6%8A%80%E8%83%BD%E7%89%B9%E5%AE%9A%E3%81%AE%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AB%E3%82%88%E3%82%89%E3%81%AA%E3%81%84)
 - [自然言語](#%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E)
-- [強み](#%E5%BC%B7%E3%81%BF)
 - [やったことはないが興味があるもの](#%E3%82%84%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8%E3%81%AF%E3%81%AA%E3%81%84%E3%81%8C%E8%88%88%E5%91%B3%E3%81%8C%E3%81%82%E3%82%8B%E3%82%82%E3%81%AE)
 - [職務経歴](#%E8%81%B7%E5%8B%99%E7%B5%8C%E6%AD%B4)
   - [2018-04 ～ 現在 : E社](#2018-04--%E7%8F%BE%E5%9C%A8--e%E7%A4%BE)
@@ -82,7 +81,7 @@
 
 <!-- なぜこのように区分されているかわかったあなたとは、友達になれる気がする！ -->
 
-- **Haskell**, Scala, Kotlin, Elm, Golang
+- **Haskell**, [**Idris**](https://www.idris-lang.org/), Scala, Kotlin, Elm, Golang
 - **TypeScript**, Java, C++(11, 14, 17), C#, C
 - Python3 (mypy), Clojure, bash, zsh, Vim script
 - HTML, CSS, Sass, Markdown (CommonMark, GitHub Flavor Markdown, Qiita Markdown), Re:VIEW
@@ -121,6 +120,25 @@
     - eslint
     - prettier
 
+- [Google Cloud Platform](https://cloud.google.com/products)
+    - App Engine
+    - Compute Engine
+    - Cloud Storage
+    - Cloud Functions
+    - Dialogflow
+    - **Firebase**
+        - Firestore
+        - Functions
+        - Authentication
+        - Storage
+        - Hosting
+        - それぞれのrules
+    - 少しいじった程度
+        - Vision AI
+        - Translation
+        - Text-to-speech
+        - Cloud Domains
+
 - Kotlin
     - AndroidSDK
 
@@ -137,29 +155,40 @@
 - CSS
     - Bootstrap (version4, 5)
 
-### 技能（特定のフレームワークによらない）
+### 強み・技能（特定のフレームワークによらない）
 
 - フロントエンド（2018より）
 - フルスタック（2014より）
-
 - アジャイル・スクラム開発（2020より）
 
-- Test Driven Development
+- 常に**最新の技術・トレンド**を追っている
+    - Twitter・Qiita・Reddit・Google Discoverなどによる
+
+- **Test Driven Development** (TDD)
     - Property Based Testing
     - doctest
 
+- （純）関数型プログラミング - (Pure) Functional Programming
+    - **Haskellを主力にしています**
+    - その他: Idris, Scala, Elm, Clojure, TypeScript
+
+- **高いコード品質**で開発を遂行できる
+    - **強い静的型付け**を駆使したプログラミング
+        - 「[型システム入門 −プログラミング言語と型の理論−](https://www.amazon.co.jp/%E5%9E%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%85%A5%E9%96%80-%E2%88%92%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E%E3%81%A8%E5%9E%8B%E3%81%AE%E7%90%86%E8%AB%96%E2%88%92-Benjamin-C-Pierce/dp/4274069117)」を読んでいるところです
+    - 型安全性や仕様未定義などを外れうる言語での**unsafeの回避**・既に埋め込まれたunsafeの対処（修正）
+    - 漸進的型付け
+    - 最適な関数分割・命名
+    - LSPや言語特有のコードフォーマッターを使用
+    - 定理証明プログラミング
+    - その他、人間的な**可読性の担保**
+
 - **GitHub**
+    - Issue駆動開発 [^what-is-issue-driven-development]・gitフロー・GitHubフロー・混合フロー
     - GitHub Actions
     - GitHub Apps
     - GitHub Releases
 
-- **Firebase**
-    - Firestore
-    - Functions
-    - Authentication
-    - Storage
-    - Hosting
-    - それぞれのrules
+[^what-is-issue-driven-development]: 1つのIssueに対してn（`0 <= n`）個のPRを作成・紐付けを行い、開発を継続していくスタイル。
 
 - CSS
     - レスポンシブデザイン
@@ -176,6 +205,12 @@
             - [電子版オンリー](https://aiya000.booth.pm/items/1040121)
         - [Haskellでわかる群論の代数的構造 - aiya000/haskell_de_groupstructure](https://github.com/aiya000/haskell_de_groupstructure)
             - 資料: [aiya000/hs-algebra: Test algebra type class by QuickCheck.](https://github.com/aiya000/hs-algebra)
+
+- Twitterのフォロワーがn-k人超えしているアカウントをいくつか持っているので、発信に慣れている
+    - 3000人超え: [@public\_ai000ya](https://twitter.com/public_ai000ya)
+    - 2000人超え: 非公開（VRChat向けアカウント）
+    - 超人的なプログラマーがTwitterのフォロワーに多くいるので、強く学べるネット環境にある
+        - リアルの知人にも多くいるので、強く学べるリアル環境にもある
 
 - 文章作成
     - **専門書の執筆**（上述）
@@ -195,35 +230,10 @@
   - :o: 書き・読み
   - :x: 聞き・話し
 
-## 強み
-
-- 常に**最新の技術・トレンド**を追っている
-    - Twitter・Qiita・Reddit・Google Discoverなどによる
-
-- **高いコード品質**で開発を遂行できる
-    - **強い静的型付け**を駆使したプログラミング
-    - 型安全性や仕様未定義などを外れうる言語での**unsafeの回避**・既に埋め込まれたunsafeの対処（修正）
-    - 漸進的型付け
-    - TDD・doctest
-    - 最適な関数分割・命名
-    - LSPや言語特有のコードフォーマッターを使用
-    - 定理証明プログラミング
-    - その他、人間的な**可読性**の担保
-    - [型システム入門 −プログラミング言語と型の理論−](https://www.amazon.co.jp/%E5%9E%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%85%A5%E9%96%80-%E2%88%92%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E%E3%81%A8%E5%9E%8B%E3%81%AE%E7%90%86%E8%AB%96%E2%88%92-Benjamin-C-Pierce/dp/4274069117)を読んでいるところです
-
-- （純）関数型プログラミング - (Pure) Functional Programming
-    - **Haskellを主力にしています**
-    - その他: Scala, Elm, Clojure, TypeScript
-
-- Twitterのフォロワーがn-k人超えしているアカウントをいくつか持っている
-    - 3000人超え: [@public\_ai000ya](https://twitter.com/public_ai000ya)
-    - 2000人超え: 非公開（VRChat向けアカウント）
-    - 超人的なプログラマーがTwitterのフォロワーに多くいるので、強く学べるネット環境にある
-        - リアルの知人にも多くいるので、強く学べるリアル環境にもある
-
 ## やったことはないが興味があるもの
 
-- Rust, PureScript
+- Rust, [Gleam](https://gleam.run/), [PureScript](https://www.purescript.org/)
+- [Svelte](https://svelte.dev/), [React](https://ja.reactjs.org/), ReactNative, [Next.js](https://nextjs.org/)
 - AWS
 - その他、新しいもの
 
