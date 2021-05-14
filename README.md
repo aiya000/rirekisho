@@ -80,10 +80,8 @@
 # スキル
 ## プログラミング言語（非チューリング完全含む）
 
-<!-- なぜこのように区分されているかわかったあなたとは、友達になれる気がする！ -->
-
 - **Haskell**, [**Idris**](https://www.idris-lang.org/), Scala, Kotlin, Elm, Golang
-- **TypeScript**, Java, C++(11, 14, 17), C#, C
+- **TypeScript**, Java, C++ (11, 14, 17), C#, C
 - Python3 (mypy), Clojure, bash, zsh, Vim script
 - HTML, CSS, Sass, Markdown (CommonMark, GitHub Flavor Markdown, Qiita Markdown), Re:VIEW
 - json, json5, yaml, GraphQL
@@ -233,7 +231,9 @@
 
 - Rust, [Gleam](https://gleam.run/), [PureScript](https://www.purescript.org/)
 - [Svelte](https://svelte.dev/), [React](https://ja.reactjs.org/), ReactNative, [Next.js](https://nextjs.org/)
+- WebAssembly
 - AWS
+- VR関連
 - その他、新しいもの
 
 # 職務経歴
@@ -259,9 +259,9 @@
 
 本プロジェクトには途中参加しました。
 
-WPFプロジェクトにも関わらずMVVMでコーディングされていなかったため、まずはリファクタリングから担当を始めました。
+WPFプロジェクトにも関わらずMVWでコーディングされていなかったため、まずはリファクタリングから担当を始めました。
 
-- MVVM
+- MVW（MVVM）
 
 - - -
 
@@ -408,7 +408,7 @@ Python3から[Audio Weaver](https://w.dspconcepts.com/audio-weaver) Serverにリ
 
 - - -
 
-### 工事現場のマネジメント用Windowsアプリ開発
+### 防水工事現場のマネジメント用Windowsアプリ開発
 
 工事会社からの受託契約で、ヒアリング・外部設計から内部設計・開発全てを担当しました。
 
@@ -418,12 +418,25 @@ Python3から[Audio Weaver](https://w.dspconcepts.com/audio-weaver) Serverにリ
 
 以下の機能を有していました。
 
-- 現場作業員により、経費が入力される。その経費を工事現場ごとに集計する
-- 工事の契約書から必要な情報を抜き出し、スプレッドシートにする
-- スプレッドシートから契約の情報を抜き出し、集計する
-- その他もろもろ
+- 情報管理
+    - 自社社員情報
+    - 工事案件の情報
+    - 工事材料
+    - 工事種（工事材料のグループ）
+    - 顧客会社情報
 
-以降、Windows Formsでの開発はやめ、WPFを使用するようになりました。
+- 「入力・出力」機能
+    - 状況 （赤字 or 黒字）の表示
+    - 顧客会社への見積書の作成（指定された形式へのExcelへの出力）
+    - 日報登録機能 （現場社員による日々のコストの入力）
+
+現場作業員により、経費が入力されます。
+その経費を工事現場ごとに集計します。
+
+下記環境を使用しました。
+
+- Redmine
+- [gitbucket](https://github.com/gitbucket/gitbucket)
 
 - - -
 
@@ -444,6 +457,21 @@ Python3から[Audio Weaver](https://w.dspconcepts.com/audio-weaver) Serverにリ
     - テキストのスクロールスピード
     - 画像のフェードアウト・表示・フェードインのスピード
     - それらが同時に終了するように、時間を調整する
+
+- - -
+
+### 派遣情報管理ソフト開発
+
+下記技術での開発になります。
+
+- C# (.NET)
+- WPF
+
+ただし短納期を要求されたため、WPFをMVVMではなくMVCで運用しました。
+
+また顧客要望で「ExcelからMicrosoft SQL Server 2016のデータベースに変換する」という作業が求められたので、Rubyで実現しました。。
+
+- Ruby
 
 - - - - -
 - - - - -
