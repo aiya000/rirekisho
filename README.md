@@ -62,25 +62,13 @@
 
 ## その他
 
-- Isucon2019参加
-
-- - -
-
-- Vim本体へのコントリビュート: [ Pull Request #4634 - vim/vim](https://github.com/vim/vim/pull/4634)
-- 普段使い用xmonad（Haskell製X Window Manager）: [aiya000/xmonad-config](https://github.com/aiya000/xmonad-config)
-- yi-editor/yi（Haskell製TUIテキストエディタ）へのコントリビュート
-    - [Pull Request #936 - yi-editor/yi](https://github.com/yi-editor/yi/pull/936)
-    - [Pull Request #942 - yi-editor/yi](https://github.com/yi-editor/yi/pull/942)
-
-- - -
-
 - [aiya000.github.io/Maid](https://aiya000.github.io/Maid)
 - [スライド置き場 - slideshare](https://www.slideshare.net/aiya000)
 
 # スキル
 ## プログラミング言語（非チューリング完全含む）
 
-- **Haskell**, [**Idris**](https://www.idris-lang.org/), Scala, Kotlin, Elm, Golang
+- **Haskell**, Scala, Kotlin, Elm, [Idris1](https://www.idris-lang.org/)
 - **TypeScript**, Java, C++ (11, 14, 17), C#, C
 - Python3 (mypy), Clojure, bash, zsh, Vim script
 - HTML, CSS, Sass, Markdown (CommonMark, GitHub Flavor Markdown, Qiita Markdown), Re:VIEW
@@ -102,22 +90,31 @@
     - など
 
 - TypeScript
-    - **Nuxt.js**
-        - typed-vuex
-        - nuxt-property-decorator
-    - Vue.js (version 2)
+    - Vue3 (Vue.js)
+        - **Nuxt3** (Nuxt.js)
+    - Vue2 (Vue.js)
+        - Nuxt2 (Nuxt.js)
+            - typed-vuex
+            - nuxt-property-decorator
         - vuex
         - vue-router
         - vue-property-decorator
         - vue-test-utils
         - BootstrapVue
-        - eslint-vue-plugin
-    - NativeScript-Vue
+        - NativeScript-Vue
+    - React.js
+        - Next.js
+        - Gatsby.js
     - node.js
     - [probot](https://github.com/probot/probot)
     - [Express.js](https://expressjs.com/ja/)
     - eslint
     - prettier
+
+- CSS
+    - Tailwind
+    - vanilla-extract
+    - Bootstrap (version4, 5)
 
 - [Google Cloud Platform](https://cloud.google.com/products)
     - App Engine
@@ -151,9 +148,6 @@
         - VRCSDK3（Avatar・World）
         - [UdonSharp](https://github.com/MerlinVR/UdonSharp)
 
-- CSS
-    - Bootstrap (version4, 5)
-
 ## 強み・技能（特定のフレームワークによらない）
 
 - フロントエンド（2018より）
@@ -161,15 +155,14 @@
 - アジャイル・スクラム開発（2020より）
 
 - 常に**最新の技術・トレンド**を追っている
-    - Twitter・Qiita・Reddit・Google Discoverなどによる
+    - TechFeed, Qiita, Zenn, Reddit, Google Discover, Twitterなどによる
 
 - **Test Driven Development** (TDD)
     - Property Based Testing
     - doctest
 
 - （純）関数型プログラミング - (Pure) Functional Programming
-    - **Haskellを主力にしています**
-    - その他: Idris, Scala, Elm, Clojure, TypeScript
+    - Haskell, Idris1, Scala, Elm, Clojure, TypeScript
 
 - **高いコード品質**で開発を遂行できる
     - **強い静的型付け**を駆使したプログラミング
@@ -203,7 +196,7 @@
         - [Haskellでわかる群論の代数的構造 - aiya000/haskell_de_groupstructure](https://github.com/aiya000/haskell_de_groupstructure)
             - 資料: [aiya000/hs-algebra: Test algebra type class by QuickCheck.](https://github.com/aiya000/hs-algebra)
 
-- Twitterのフォロワーがn-k人超えしているアカウントをいくつか持っているので、発信に慣れている
+- Twitterのフォロワーが1000人超えしているアカウントをいくつか持っているので、発信に慣れている
     - 3000人超え: [@public\_ai000ya](https://twitter.com/public_ai000ya)
     - 2000人超え: 非公開（VRChat向けアカウント）
     - 超人的なプログラマーがTwitterのフォロワーに多くいるので、強く学べるネット環境にある
@@ -230,7 +223,7 @@
 # やったことはないが興味があるもの
 
 - Rust, [Gleam](https://gleam.run/), [PureScript](https://www.purescript.org/)
-- [Svelte](https://svelte.dev/), [React](https://ja.reactjs.org/), ReactNative, [Next.js](https://nextjs.org/)
+- [Svelte](https://svelte.dev/), ReactNative
 - WebAssembly
 - AWS
 - VR関連
