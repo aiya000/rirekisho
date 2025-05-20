@@ -15,7 +15,7 @@ Twitterから流入してくれた方々向けなので、かなりカジュア�
 
 - - -
 
-## ポートふぉーりお
+## ポートフォーリオ
 
 - [aiya000 - LAPRAS](https://lapras.com/public/7H5XCKU)
 
