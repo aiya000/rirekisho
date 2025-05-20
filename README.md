@@ -1,3 +1,35 @@
+# ! 注意 !
+
+この履歴書は現在更新が追いついておらず、直近の内容が反映されていません。
+今のところとして、まずは以下の参照をお願いします。
+
+- - -
+
+## 職務経歴書
+
+- [public\_ai000ya - X bio](https://x.com/public_ai000ya/bio)
+
+Twitterから流入してくれた方々向けなので、かなりカジュアルですが、ご了承ください。
+
+![image](https://github.com/user-attachments/assets/4c33a86a-1c55-45a0-88fd-33946c4a811d)
+
+- - -
+
+## ポートふぉーりお
+
+- [aiya000 - LAPRAS](https://lapras.com/public/7H5XCKU)
+
+技術力スコア・市場価値スコア・スキルや実際の活動（主にGitHub・Qiita・Zenn）・参加したイベント（connpass経由）が確認できます。
+
+![image](https://github.com/user-attachments/assets/0983d9fc-af72-4df0-b3f1-53cbc8f1a318)
+
+- - -
+
+以下、内容が更新できていませんが、職務経歴書兼、自己PRです。
+
+- - -
+- - -
+
 # 職務経歴書
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
