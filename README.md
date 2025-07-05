@@ -14,7 +14,7 @@
 |-|
 |**フロントエンド**, 自動テスト, **コード品質**, **メンテナンス性**, 最新技術, 技術トレンド, git, CI/CD|
 |**（純粋）関数型プログラミング**, **（強い）静的型付け**, 漸進的型付け, 依存型, 圏論|
-|**Test Driven Development**, Property Based Testing, Extensible Effects|
+|**Test Driven Development**, Property Based Testing, Extensible Effects, モジュラーモノリス|
 |**TypeScript**, **Haskell**, C#|
 |**Vue**, **Nuxt**, React, Zod, **ESLint**, Bun, Vitest, Playwright, Puppeteer|
 
@@ -135,8 +135,7 @@ NOTE: doctocが'■'をうまく扱えないので、職務経歴の子セクシ
 
 - エコシステム・ツール
     - Node.js
-    - [Bun](https://bun.sh/)
-    - [Vite](https://ja.vite.dev/)
+    - [Bun](https://bun.sh/), [Yarn](https://yarnpkg.com/), [Vite](https://ja.vite.dev/)
     - ESLint, [typescript-eslint](https://typescript-eslint.io/)
     - Prettier, [ESLint Stylistic](https://eslint.style/)
 
@@ -191,17 +190,23 @@ NOTE: doctocが'■'をうまく扱えないので、職務経歴の子セクシ
     - AndroidSDK
 
 - C#
-    - WPF -- MVVM
+    - WPF -- MVVM, MVC
     - Windows Forms
     - Unity
-        - VRCSDK3（Avatar・World）
+        - VRCSDK3（Avatar, World）
         - [UdonSharp](https://github.com/MerlinVR/UdonSharp)
 
 ## 強み・技能
 
-- フロントエンド（2018より）
-- フルスタック（2014より）
-- アジャイル・スクラム開発（2020より）
+- ☆ **フロントエンド**, フルスタック, プログラミング全般
+- ☆ **強い静的型付け**（型検査器）
+- ☆ 自動テスト, **コード品質**, **メンテナンス性**
+- ☆ 最新技術, 技術トレンド
+- ☆ 数学・圏論を少々, 技術書執筆
+
+<!--
+NOTE: これ、強いってほど言えるか？ `- アジャイル・スクラム開発`
+-->
 
 - 常に**最新の技術・トレンド**を追っている
     - Zenn, Google Discover, Qiita, TechFeed, Reddit, Xなどにより
@@ -268,7 +273,7 @@ NOTE: doctocが'■'をうまく扱えないので、職務経歴の子セクシ
 
 ## 職務経歴
 
-### ■ 2014-04 ～ 2016-10: N社
+### ■ N社 : 2014-04 ～ 2016-10
 
 - 職務: テックリード, アーキテクト, フルスタック（アプリ, バックエンド, インフラ）, データーベース, QA, 情シス
 
@@ -383,7 +388,7 @@ NOTE: doctocが'■'をうまく扱えないので、職務経歴の子セクシ
 
 ---
 
-### ■ 2018-04 ～ 2021-12: 株式会社イーフロー
+### ■ 株式会社イーフロー : 2018-04 ～ 2021-12
 
 - 職務: フロントエンド, バックエンド, 低レイヤー（ライブラリ実装）, デスクトップアプリ, モバイルアプリ, CI/CD
 
@@ -489,14 +494,112 @@ Python3から[Audio Weaver](https://w.dspconcepts.com/audio-weaver) Serverにリ
 
 ---
 
-### ■2022-01 ～ 2025-05: 株式会社HIKKY
+### ■ 株式会社HIKKY : 2022-01 ～ 2025-05
 
 - 職務: フロントエンドスペシャリスト, CI/CD, DevOps
 
-- Nuxt3, Vue3
+HIKKYでは技術スタックがほぼ共通していたので、共通部分を以下に示します。
 
-TODO: 詳細を書く
-TODO: HIKKYでは自分でキャッチした情報を部全体に逐次共有し、毎週の部の定例では、そこで共有したもののまとめを発表していました
+- 全体で共通した技術スタック
+    - TypeScript
+    - [Bun](https://bun.sh/), [Yarn](https://yarnpkg.com/), [Vite](https://ja.vite.dev/)
+    - Vue3, Nuxt3, nuxt/i18n with yaml-loader
+    - [Zod](https://zod.dev/), [openapi-zod-client](https://github.com/astahmer/openapi-zod-client)
+    - [vee-validate](https://vee-validate.logaretm.com/v4/), [vee-validate/zod](https://vee-validate.logaretm.com/v4/integrations/zod-schema-validation/)
+    - ESLint, [typescript-eslint](https://typescript-eslint.io/), Prettier（新しい環境では[ESLint Stylistic](https://eslint.style/)）
+    - Vitest, [vue-test-utils](https://test-utils.vuejs.org/), [vue-testing-library](https://github.com/testing-library/vue-testing-library), [fast-check](https://github.com/dubzzz/fast-check)（Property Based Testing）
+
+<a name="hikky-template-repo"></a>
+
+#### ■■ Web部全体向け、Nuxtテンプレートリポジトリの開発・運用・保守
+
+Web部が担当する全てのプロジェクトで使用する、Nuxt製のテンプレートリポジトリの、開発・運用・保守を担当しました。
+
+ひな形をWeb部リーダーが作成していました。
+その後リーダーと相談しながら、他のメンバーとも意見を積極的に交換し、半ばのテックリードとして主体的に進めていきました。
+
+大きな動きの具体例としては、以下を実行しました。
+
+- JavaScriptにはないTypeScriptのメリットをドキュメント化し、使用を提案。その結果、TypeScriptを採用していただけました
+- `as`や`any`型を用いないこと、Zod・type-festなどを用いることの説明・提案、型安全性の啓蒙
+- ドキュメントコメントとlanguage-server-protocol（lsp）による、コード例示・コストの低いドキュメンテーションとしての、重要性の啓蒙
+    - [※コード例](#hikky-example-document-comment)
+- テストによる
+    - Vitest, [vue-test-utils](https://test-utils.vuejs.org/), [vue-testing-library](https://github.com/testing-library/vue-testing-library), [fast-check](https://github.com/dubzzz/fast-check)（Property Based Testing）
+- その他、キャッチした最新技術の提案・採用 -- 例: [openapi-zod-client](https://github.com/astahmer/openapi-zod-client)
+
+そのうち、内外部向けに公開した記事としては、以下があります。
+
+- 重要なもの（HIKKY内部資料として作成したものを、外部向けに引用したもの）
+    - [「テストを書こうとしたけど、どう（いつ）書いたらいいかわからない」初心者向けガイドライン！ - HIKKYフロントエンドガイドラインより](https://zenn.dev/aiya000/articles/00e2795fbb7dee)
+    - [単体テストと結合テストガイドライン - HIKKYフロントエンドガイドラインより](https://zenn.dev/aiya000/articles/978fa504b1da3f)
+    - [最速TypeScript静的型付け不健全プログラミング～readonlyプロパティに値を再代入する～](https://qiita.com/aiya000/items/65e31b02ca543b7c15df)
+
+<details>
+<summary>その他、細かいもの</summary> <!-- {{{ -->
+
+- [zodはどんなときに使えるのか？ ぜんぶだよ！！](https://zenn.dev/aiya000/articles/cd06a0f3620d59)
+- [他のプロパティに依存するzodスキーマはsuperRefineを使え](https://zenn.dev/aiya000/articles/5936049dc1ea68)
+- [ZodIntersectionのプロパティの和型のうち、いらない型を`.and()`を使って除外する](https://zenn.dev/aiya000/articles/73cdb8721a7637)
+- [【型安全な実装】型安全にvue-i18nの辞書から配列を取得して、変数に設定する【の掘り下げ方】](https://zenn.dev/aiya000/articles/d82a34c1f98455)
+- [vue-i18nのi18n.t('key')で、'key'が見つからなかったときに例外をthrowする](https://zenn.dev/aiya000/articles/15d1f76e968ea0)
+- [【Vue3・Nuxt3】最新のVue3で、`<script setup>`で単に値をexportする（defineExposeではない）](https://zenn.dev/aiya000/articles/f7faffce4eab5d)
+- [【Vue3】俺のcomputed(() => x.value)の値が子コンポーネントに勝手にアップデートされるんだが【TypeScript】](https://zenn.dev/aiya000/articles/04288f9fe9bb27)
+
+<!-- }}} -->
+</details>
+
+
+テンプレートリポジトリの現在は、外部向けの最新版がOSSとして、以下で公開されています。
+
+- [vket-boilerplate-nuxt](https://github.com/PublicHIKKY/vket-boilerplate-nuxt)
+
+<details>
+<summary>本テンプレートリポジトリのアーキテクチャ</summary> <!-- {{{ -->
+
+- Bun Workspaceを用いて、モジュラーモノリスになっています
+    - [layers](https://github.com/PublicHIKKY/vket-boilerplate-nuxt/tree/5d6616f053d9f9d0a6422f2c5f0aca360dbc2a46/layers) - 2025-07-05
+        - `main` -- プロダクトコードが置かれる想定のレイヤー。テンプレートリポジトリにはプロダクトコードがないため、基本的な環境のみ配置
+        - `base` -- 全てのプロダクトの`layers/main`が参照する、共通モジュールを配置するレイヤー
+        - その他（現在は`open-api`と`showcases`） -- プロダクトによっては参照することのある、共通モジュールを配置するレイヤー
+    - そのため「先にこのテンプレートを使用したプロダクトリポジトリで、`layers/base`にコードを追加」 -> 「プロダクトが落ち着いた時点でテンプレートリポジトリ側にコントリビュートする」という運用が可能になっており、実際にそうしていました
+
+- テストは各レイヤーに配置されています
+    - 例: [layers/base/app/test - 2025-07-05](https://github.com/PublicHIKKY/vket-boilerplate-nuxt/tree/5d6616f053d9f9d0a6422f2c5f0aca360dbc2a46/layers/base/app/test)
+        - Property Based Testingを使用した例: [array.spec.ts](https://github.com/PublicHIKKY/vket-boilerplate-nuxt/blob/5d6616f053d9f9d0a6422f2c5f0aca360dbc2a46/layers/base/app/test/utils/array.spec.ts)
+        - コンパイル時テストを使用した例: [types.spec.ts](https://github.com/PublicHIKKY/vket-boilerplate-nuxt/blob/5d6616f053d9f9d0a6422f2c5f0aca360dbc2a46/layers/base/app/test/utils/types/types.spec.ts)
+
+<!-- }}} -->
+</details>
+
+#### ■■ TODO: 各案件
+
+- Virtual AKIBA World（ロジックおよびデザイン実装担当） -- JR東日本と協業（サービス終了）
+    - https://www.jreast.co.jp/press/2021/20220308_ho02.pdf
+    - https://www2.tmn-anshin.co.jp/download/966/221226news.pdf
+
+- Vket Store（ロジック担当および一部デザイン実装担当） -- サービス終了
+    - https://store.vket.com/index.html
+    - https://www.moguravr.com/vket-store-end/
+
+- コーポレートサイト（ロジック担当）: https://hikky.co.jp/
+- Vket2023Summer公式サイト（ロジック担当）: https://event.vket.com/2023Summer
+- アバターメイカー（ロジックおよび一部のデザイン実装担当）: https://avatarmaker.vket.com/
+- VketCloudのJavaScript向け拡張エンジン: 一般非公開
+
+
+#### ■■ その他、プロジェクト外での活動
+
+##### ■■■ 半テックリードとして技術選定
+
+- TODO: GitHub CopilotやClineの啓蒙
+
+##### ■■■ 社内での発信
+
+HIKKYはプロジェクト外の活動も活発に行っており、私は以下のような活動を行いました。
+
+- Discordの情報共有チャンネルで定期的に、個人的にキャッチした情報を発信
+- 上記チャンネルで共有したものをまとめ、Web部の週次定例で発表する時間をいただき、発表
 
 - - - - -
 
@@ -521,3 +624,30 @@ TODO: HIKKYでは自分でキャッチした情報を部全体に逐次共有し
 <a name="corp-e-works-example-a">※2</a>: リポジトリ作成権限を持たせながら、リポジトリ管理権限は持たせたくないため。
 
 <a name="corp-e-works-example-b">※3</a>: [テンプレートリポジトリ](https://docs.github.com/ja/github/creating-cloning-and-archiving-repositories/creating-a-template-repository)を使用することも考えられましたが、リポジトリ作成後はそれぞれのプロジェクトでカスタムしたいとのことでした。
+
+<a name="hikky-example-document-comment">※4</a>: コストの低いドキュメンテーションとしての、ドキュメントコメントでのコード例示。lspで使用する側から表示されることを想定。
+
+array.ts:
+```typescript
+/**
+ * `start`から`stop`までの範囲の、数値の配列を生成します。
+ *
+ * ```ts
+ * range(1, 5) // [1, 2, 3, 4, 5]
+ * range(1, 5, 2) // [1, 3, 5]
+ * range(5, 1, -1) // [5, 4, 3, 2, 1]
+ * ```
+ */
+export const range = (start: number, stop: number, step = 1) =>
+  Array.from({ length: (stop - start) / step + 1 }, (_, i) => start + i * step)
+```
+
+main.ts
+```typescript
+const main = () => {
+  // ここで、lspに対応したエディタのカーソルを'range'の上に持っていき、
+  // 'range'のドキュメントを引くことで、
+  // 上述のドキュメントコメントが表示されます
+  console.log(range(1, 5))
+};
+```
