@@ -3,10 +3,20 @@
 - **aiya000（あいや）**
 - Frontend Engineer / Fullstack Enthusiast / OSS Contributor
 
+**静的型付き言語**・**自動テスト**・**（純粋）関数型プログラミング**・AIの知識を用いて、御社のプロダクトコードの**メンテナンス性**を高く向上させ、開発します。
+
 [![](./assets/chart-lapras.png)](https://lapras.com/public/7H5XCKU)
 
 技術力スコア: 3.97（ITエンジニア全体の**上位2.54%**） -- LAPRAS 技術力スコア v2.2.2 調べ  
 市場価値スコア: 3.65（LAPRASユーザーの**上位9.67%**） -- LAPRAS 市場価値スコアβ版 2025/05/23 調べ
+
+|キーワード|
+|-|
+|**フロントエンド**, 自動テスト, **コード品質**, **メンテナンス性**, 最新技術, 技術トレンド, git, CI/CD|
+|**（純粋）関数型プログラミング**, **（強い）静的型付け**, 漸進的型付け, 依存型, 圏論|
+|**Test Driven Development**, Property Based Testing, Extensible Effects|
+|**TypeScript**, **Haskell**, C#|
+|**Vue**, **Nuxt**, React, Zod, **ESLint**, Bun, Vitest, Playwright, Puppeteer|
 
 - - - - -
 
