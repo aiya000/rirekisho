@@ -117,7 +117,7 @@ NOTE: doctocが'■'をうまく扱えないので、職務経歴の子セクシ
 - フレームワーク
     - **Vue**, **Nuxt**
         - Vue3, Nuxt3
-            - nuxt/i18n with yaml-loader
+            - [@nuxtjs/i18n with yaml in SFC](#example-i18n-with-yaml-in-sfc)
             - [vee-validate](https://vee-validate.logaretm.com/v4/), [vee-validate/zod](https://vee-validate.logaretm.com/v4/integrations/zod-schema-validation/)
             - [vue-test-utils](https://test-utils.vuejs.org/), [vue-testing-library](https://github.com/testing-library/vue-testing-library)
         - Vue2, Nuxt2 (Nuxt.js)
@@ -231,7 +231,7 @@ NOTE: これ、強いってほど言えるか？ `- アジャイル・スクラ�
 
 - **GitHub**
     - Issue駆動開発（[※1](#what-is-issue-driven-development)）, gitフロー, GitHubフロー, 混合フロー
-    - GitHub Actions, GitHub Apps, GitHub Releases
+    - [GitHub Actions](https://github.co.jp/features/actions), GitHub Apps, GitHub Releases
 
 - CSS
     - レスポンシブデザイン
@@ -461,7 +461,7 @@ Vueの社内採用に先駆けて、Vueの研究目的で、社内アプリ（TO
         - Node.js
         - probot + octokit
     - GitHub
-        - GitHub Actions
+        - [GitHub Actions](https://github.co.jp/features/actions)
         - GitHub Apps
         - GitHub Templates
         - etc
@@ -498,12 +498,17 @@ Python3から[Audio Weaver](https://w.dspconcepts.com/audio-weaver) Serverにリ
 
 - 職務: フロントエンドスペシャリスト, CI/CD, DevOps
 
-HIKKYでは技術スタックがほぼ共通していたので、共通部分を以下に示します。
+HIKKYではCI/CIとDevOpsを除き、Webフロントエンドに集中して従事していたため、Webフロントエンドの技術を今まで以上に深く学ぶことができました。
+
+<a name="hikky-common-tech-stack"></a>
+
+HIKKYではプロジェクトをまたがって技術スタックがほぼ共通していたので、共通部分を以下に示します。
 
 - 全体で共通した技術スタック
     - TypeScript
     - [Bun](https://bun.sh/), [Yarn](https://yarnpkg.com/), [Vite](https://ja.vite.dev/)
-    - Vue3, Nuxt3, nuxt/i18n with yaml-loader
+    - Vue3, Nuxt3, [@nuxtjs/i18n with yaml in SFC](#example-i18n-with-yaml-in-sfc)
+        - [Atomic Design](https://atomicdesign.bradfrost.com/)
     - [Zod](https://zod.dev/), [openapi-zod-client](https://github.com/astahmer/openapi-zod-client)
     - [vee-validate](https://vee-validate.logaretm.com/v4/), [vee-validate/zod](https://vee-validate.logaretm.com/v4/integrations/zod-schema-validation/)
     - ESLint, [typescript-eslint](https://typescript-eslint.io/), Prettier（新しい環境では[ESLint Stylistic](https://eslint.style/)）
@@ -516,17 +521,24 @@ HIKKYでは技術スタックがほぼ共通していたので、共通部分を
 Web部が担当する全てのプロジェクトで使用する、Nuxt製のテンプレートリポジトリの、開発・運用・保守を担当しました。
 
 ひな形をWeb部リーダーが作成していました。
-その後リーダーと相談しながら、他のメンバーとも意見を積極的に交換し、半ばのテックリードとして主体的に進めていきました。
+その後リーダーと相談しながら、他のメンバーとも意見を積極的に交換し、技術選定を主体的に進めていきました。
 
 大きな動きの具体例としては、以下を実行しました。
 
-- JavaScriptにはないTypeScriptのメリットをドキュメント化し、使用を提案。その結果、TypeScriptを採用していただけました
-- `as`や`any`型を用いないこと、Zod・type-festなどを用いることの説明・提案、型安全性の啓蒙
-- ドキュメントコメントとlanguage-server-protocol（lsp）による、コード例示・コストの低いドキュメンテーションとしての、重要性の啓蒙
+- JavaScriptにはないTypeScriptのメリットをドキュメント化し、使用を提案
+    - その結果、TypeScriptを採用することができました
+- `as`や`any`型を用いないこと、Zod・type-festなどを用いることの説明・提案。**型安全性**の啓蒙
+- ドキュメントコメントとlanguage-server-protocol（lsp）による、コード例示・コストの低い**ドキュメンテーション**としての、重要性の啓蒙
     - [※コード例](#hikky-example-document-comment)
-- テストによる
-    - Vitest, [vue-test-utils](https://test-utils.vuejs.org/), [vue-testing-library](https://github.com/testing-library/vue-testing-library), [fast-check](https://github.com/dubzzz/fast-check)（Property Based Testing）
-- その他、キャッチした最新技術の提案・採用 -- 例: [openapi-zod-client](https://github.com/astahmer/openapi-zod-client)
+- **自動テスト**手法の説明・啓蒙
+- その他、キャッチした**最新技術**の提案・採用
+    - 例:
+        - [GitHub Actions](https://github.co.jp/features/actions)
+        - [ts-reset](https://github.com/mattpocock/ts-reset)
+        - [`<i18n lang="yaml">`](#example-i18n-with-yaml-in-sfc)
+        - [openapi-zod-client](https://github.com/astahmer/openapi-zod-client)
+        - [Vitest](https://vitest.dev/) （[vue-test-utils](https://test-utils.vuejs.org/), [vue-testing-library](https://github.com/testing-library/vue-testing-library), [playwright](https://playwright.dev/), [fast-check](https://github.com/dubzzz/fast-check)）
+        - [ESLint FlatConfig](https://eslint.org/docs/latest/use/configure/migration-guide)
 
 そのうち、内外部向けに公開した記事としては、以下があります。
 
@@ -536,7 +548,7 @@ Web部が担当する全てのプロジェクトで使用する、Nuxt製のテ�
     - [最速TypeScript静的型付け不健全プログラミング～readonlyプロパティに値を再代入する～](https://qiita.com/aiya000/items/65e31b02ca543b7c15df)
 
 <details>
-<summary>その他、細かいもの</summary> <!-- {{{ -->
+<summary>その他、社内外への共有をしたもの</summary> <!-- {{{ -->
 
 - [zodはどんなときに使えるのか？ ぜんぶだよ！！](https://zenn.dev/aiya000/articles/cd06a0f3620d59)
 - [他のプロパティに依存するzodスキーマはsuperRefineを使え](https://zenn.dev/aiya000/articles/5936049dc1ea68)
@@ -549,8 +561,7 @@ Web部が担当する全てのプロジェクトで使用する、Nuxt製のテ�
 <!-- }}} -->
 </details>
 
-
-テンプレートリポジトリの現在は、外部向けの最新版がOSSとして、以下で公開されています。
+現在はテンプレートリポジトリの外部向けの最新版が、OSSとして以下で公開されています。
 
 - [vket-boilerplate-nuxt](https://github.com/PublicHIKKY/vket-boilerplate-nuxt)
 
@@ -572,27 +583,87 @@ Web部が担当する全てのプロジェクトで使用する、Nuxt製のテ�
 <!-- }}} -->
 </details>
 
-#### ■■ TODO: 各案件
+#### ■■ Virtual AKIBA World
 
-- Virtual AKIBA World（ロジックおよびデザイン実装担当） -- JR東日本と協業（サービス終了）
-    - https://www.jreast.co.jp/press/2021/20220308_ho02.pdf
-    - https://www2.tmn-anshin.co.jp/download/966/221226news.pdf
+- フロントエンド担当（ロジック実装, デザイン実装）, CI/CD, DevOps
 
-- Vket Store（ロジック担当および一部デザイン実装担当） -- サービス終了
-    - https://store.vket.com/index.html
-    - https://www.moguravr.com/vket-store-end/
+JR東日本と協業で、メタバースサービスを開発しました。
 
-- コーポレートサイト（ロジック担当）: https://hikky.co.jp/
-- Vket2023Summer公式サイト（ロジック担当）: https://event.vket.com/2023Summer
-- アバターメイカー（ロジックおよび一部のデザイン実装担当）: https://avatarmaker.vket.com/
-- VketCloudのJavaScript向け拡張エンジン: 一般非公開
+私はアウトゲーム（Webフロントエンド）を担当し、Vue/Nuxtを用いて、ロジック実装とデザイン実装を行いました。
+この頃まだHIKKYでの全体的な運用が始まったばかりの[Nuxtテンプレートリポジトリ](#hikky-template-repo)を用いて開発し、その設計思想を学ぶことができました。
 
+- [Atomic Design](https://atomicdesign.bradfrost.com/)
+- [vee-validate](https://vee-validate.logaretm.com/v4/)
+- など
+
+また仕様に忠実に従いつつ、問題がある箇所や改善点を発見していきました。
+Web部内のメンバーおよびプロイジェクトチーム内へ持ち帰り、相談・改善を行いました。
+
+CI/CDの担当も行いました。
+デプロイ先はAWS LambdaおよびAWS S3で、必要な情報をインフラ担当の方から共有していただき、私は継続的自動デプロイ環境の整備・運用に専念することができました。
+
+本案件でのCI環境は[CircleCI](https://circleci.com/ja/)を採用しました。
+この頃は全社的にCircleCIが採用されていたためです。
+
+なお現在はサービスが終了しており、サービス運用中の様子は以下のリンクにて確認することができます。
+
+- [Virtual AKIBA Worldプロモーションムービー - YouTube](https://www.youtube.com/watch?v=DNWT7LjbeKQ)
+- [世界初の「メタバース・ステーション」 “Virtual AKIBA World”がオープンします︕](https://www.jreast.co.jp/press/2021/20220308_ho02.pdf)
+- [東京海上日動が JR 東日本のメタバース空間「Virtual AKIBA World」に出展](https://www2.tmn-anshin.co.jp/download/966/221226news.pdf)
+- [@v\_akiba\_world（Virtual AKIBA World（VAW）） - X（Twitter）](https://x.com/v_akiba_world)
+- [バーチャル空間「Virtual AKIBA World」にてAKB48 SURREALとのタイアップ企画を実施します！ - PR TIMES](https://prtimes.jp/main/html/rd/p/000000399.000041458.html)
+
+#### ■■ Vket Store
+
+- フロントエンド担当（ロジック実装, 一部デザイン実装）
+
+TODO: 内容
+
+- サービス終了
+
+- https://store.vket.com/index.html
+- https://www.moguravr.com/vket-store-end/
+
+#### ■■ Vket 2023 Summer 公式サイト
+
+- フロントエンド担当（ロジック実装）
+
+- TODO: 内容。[Vket 2023 Summer 公式サイト](https://event.vket.com/2023Summer)
+- TODO: ここらでGitHub Actionsの啓蒙が完了し、採用を行った件について
+
+#### ■■ HIKKYコーポレートサイト
+
+- フロントエンド担当（ロジック実装）
+
+- TODO: 内容。[HIKKYコーポレートサイト](https://hikky.co.jp/)
+
+#### ■■ アバターメイカー
+
+- フロントエンド担当（ロジック実装, 一部のデザイン実装）
+
+- TODO: サービス内容について -> [アバターメイカー](https://avatarmaker.vket.com/)
+
+このサービスは特にインゲームとアウトゲーム・フロントエンドとバックエンドの相互連携が重要だったため、アウトゲーム・フロントエンド担当として、他プロジェクトよりもさらに積極的にコミュニケーションを撮りました。
+
+- TODO: アジャイル開発について
+
+#### ■■ VketCloudのJavaScript向け拡張エンジン
+
+VketCloudのJavaScript向け拡張エンジン（一般非公開）
+
+TODO
 
 #### ■■ その他、プロジェクト外での活動
 
-##### ■■■ 半テックリードとして技術選定
+##### ■■■ その他の技術選定
 
-- TODO: GitHub CopilotやClineの啓蒙
+技術選定で行った主な技術スタックは[「全体で共通した技術スタック」](#hikky-common-tech-stack)で述べましたが、以下の技術も啓蒙しました。
+その結果、部内全体でこれらが採用されました。
+
+- [GitHub Copilot](https://docs.github.com/ja/copilot)
+- [Cline](https://github.com/cline/cline)
+
+これらの啓蒙はHIKKYのボードメンバーに伝わったため、有料プランへの加入は会社持ちで行われることになりました。
 
 ##### ■■■ 社内での発信
 
@@ -600,6 +671,8 @@ HIKKYはプロジェクト外の活動も活発に行っており、私は以下
 
 - Discordの情報共有チャンネルで定期的に、個人的にキャッチした情報を発信
 - 上記チャンネルで共有したものをまとめ、Web部の週次定例で発表する時間をいただき、発表
+
+Web部内外への定期的な発信により、会社の技術への興味・関心を向上させました。
 
 - - - - -
 
@@ -650,4 +723,25 @@ const main = () => {
   // 上述のドキュメントコメントが表示されます
   console.log(range(1, 5))
 };
+```
+
+<a name="example-i18n-with-yaml-in-sfc">※5</a>:
+Vueの[SFC](https://ja.vuejs.org/guide/scaling-up/sfc)内にて、[@nuxtjs/i18n](https://i18n.nuxtjs.org/)の[`<i18n>`](https://i18n.nuxtjs.org/docs/api/options#customblocks)を用いて、yamlでコンポーネントローカルな辞書を定義する例:
+
+```vue
+<i18n lang="yaml">
+ja:
+  hello: こんにちは
+
+en:
+  hello: Hello
+</i18n>
+
+<template>
+  <p>{{ i18n.t('hello') }}</p>
+</template>
+
+<script setup lang="ts">
+const i18n = useI18n()
+</script>
 ```
