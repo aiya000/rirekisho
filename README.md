@@ -41,13 +41,13 @@ NOTE: doctocが'■'をうまく扱えないので、職務経歴の子セクシ
 - [自然言語](#%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E)
 - [やったことはないが興味があるもの](#%E3%82%84%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8%E3%81%AF%E3%81%AA%E3%81%84%E3%81%8C%E8%88%88%E5%91%B3%E3%81%8C%E3%81%82%E3%82%8B%E3%82%82%E3%81%AE)
 - [職務経歴](#%E8%81%B7%E5%8B%99%E7%B5%8C%E6%AD%B4)
-  - [■ 2014-04 ～ 2016-10: N社](#-2014-04--2016-10-n%E7%A4%BE)
+  - [■ N社 : 2014-04 ～ 2016-10](#-n%E7%A4%BE--2014-04--2016-10)
     - [■■ 社用メールサーバーの構築](#-%E7%A4%BE%E7%94%A8%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E6%A7%8B%E7%AF%89)
     - [■■ 高校生の研修を引率し、Androidアプリを作成](#-%E9%AB%98%E6%A0%A1%E7%94%9F%E3%81%AE%E7%A0%94%E4%BF%AE%E3%82%92%E5%BC%95%E7%8E%87%E3%81%97android%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E6%88%90)
     - [■■ 防水工事現場のマネジメント用Windowsアプリ開発](#-%E9%98%B2%E6%B0%B4%E5%B7%A5%E4%BA%8B%E7%8F%BE%E5%A0%B4%E3%81%AE%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88%E7%94%A8windows%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA)
     - [■■ A社設立記念5周年セレモニーで上映するエンディング映像を作成](#-a%E7%A4%BE%E8%A8%AD%E7%AB%8B%E8%A8%98%E5%BF%B55%E5%91%A8%E5%B9%B4%E3%82%BB%E3%83%AC%E3%83%A2%E3%83%8B%E3%83%BC%E3%81%A7%E4%B8%8A%E6%98%A0%E3%81%99%E3%82%8B%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E6%98%A0%E5%83%8F%E3%82%92%E4%BD%9C%E6%88%90)
     - [■■ 派遣情報管理用Windowsアプリ開発](#-%E6%B4%BE%E9%81%A3%E6%83%85%E5%A0%B1%E7%AE%A1%E7%90%86%E7%94%A8windows%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA)
-  - [■ 2018-04 ～ 2021-12: 株式会社イーフロー](#-2018-04--2021-12-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A4%E3%83%BC%E3%83%95%E3%83%AD%E3%83%BC)
+  - [■ 株式会社イーフロー : 2018-04 ～ 2021-12](#-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A4%E3%83%BC%E3%83%95%E3%83%AD%E3%83%BC--2018-04--2021-12)
     - [■■ 某ぬいぐるみロボットの設定ソフトを開発](#-%E6%9F%90%E3%81%AC%E3%81%84%E3%81%90%E3%82%8B%E3%81%BF%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%82%BD%E3%83%95%E3%83%88%E3%82%92%E9%96%8B%E7%99%BA)
     - [■■ 音声加工技術の開発を支援](#-%E9%9F%B3%E5%A3%B0%E5%8A%A0%E5%B7%A5%E6%8A%80%E8%A1%93%E3%81%AE%E9%96%8B%E7%99%BA%E3%82%92%E6%94%AF%E6%8F%B4)
     - [■■ ヘルスケア系iOSアプリの修正](#-%E3%83%98%E3%83%AB%E3%82%B9%E3%82%B1%E3%82%A2%E7%B3%BBios%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AE%E4%BF%AE%E6%AD%A3)
@@ -55,7 +55,17 @@ NOTE: doctocが'■'をうまく扱えないので、職務経歴の子セクシ
     - [■■ 社内アプリ開発](#-%E7%A4%BE%E5%86%85%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA)
     - [■■ GitHub周辺開発環境の構築・開発](#-github%E5%91%A8%E8%BE%BA%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89%E3%83%BB%E9%96%8B%E7%99%BA)
     - [■■ Audio Weaver向けPython3ライブラリを開発](#-audio-weaver%E5%90%91%E3%81%91python3%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E9%96%8B%E7%99%BA)
-  - [■2022-01 ～ 2025-05: 株式会社HIKKY](#%E2%96%A02022-01--2025-05-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEhikky)
+  - [■ 株式会社HIKKY : 2022-01 ～ 2025-05](#-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEhikky--2022-01--2025-05)
+    - [■■ Web部全体向け、Nuxtテンプレートリポジトリの開発・運用・保守](#-web%E9%83%A8%E5%85%A8%E4%BD%93%E5%90%91%E3%81%91nuxt%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E9%96%8B%E7%99%BA%E3%83%BB%E9%81%8B%E7%94%A8%E3%83%BB%E4%BF%9D%E5%AE%88)
+    - [■■ Virtual AKIBA World](#-virtual-akiba-world)
+    - [■■ Vket Store](#-vket-store)
+    - [■■ Vket 2023 Summer 公式サイト](#-vket-2023-summer-%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88)
+    - [■■ HIKKYコーポレートサイト](#-hikky%E3%82%B3%E3%83%BC%E3%83%9D%E3%83%AC%E3%83%BC%E3%83%88%E3%82%B5%E3%82%A4%E3%83%88)
+    - [■■ アバターメイカー](#-%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC%E3%83%A1%E3%82%A4%E3%82%AB%E3%83%BC)
+    - [■■ VketCloudのJavaScript向け拡張エンジン](#-vketcloud%E3%81%AEjavascript%E5%90%91%E3%81%91%E6%8B%A1%E5%BC%B5%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3)
+    - [■■ その他、プロジェクト外での活動](#-%E3%81%9D%E3%81%AE%E4%BB%96%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%A4%96%E3%81%A7%E3%81%AE%E6%B4%BB%E5%8B%95)
+      - [■■■ その他の技術選定](#-%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E6%8A%80%E8%A1%93%E9%81%B8%E5%AE%9A)
+      - [■■■ 社内での発信](#-%E7%A4%BE%E5%86%85%E3%81%A7%E3%81%AE%E7%99%BA%E4%BF%A1)
 - [今後のキャリアの展望](#%E4%BB%8A%E5%BE%8C%E3%81%AE%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2%E3%81%AE%E5%B1%95%E6%9C%9B)
 - [footnote](#footnote)
 
@@ -537,7 +547,7 @@ HIKKYではプロジェクトをまたがって技術スタックがほぼ共通
     - [Zod](https://zod.dev/), [openapi-zod-client](https://github.com/astahmer/openapi-zod-client)
     - [vee-validate](https://vee-validate.logaretm.com/v4/), [vee-validate/zod](https://vee-validate.logaretm.com/v4/integrations/zod-schema-validation/)
     - ESLint, [typescript-eslint](https://typescript-eslint.io/), Prettier（新しい環境では[ESLint Stylistic](https://eslint.style/)）
-    - Vitest, [vue-test-utils](https://test-utils.vuejs.org/), [vue-testing-library](https://github.com/testing-library/vue-testing-library), [fast-check](https://github.com/dubzzz/fast-check)（Property Based Testing）
+    - Vitest（[vue-test-utils](https://test-utils.vuejs.org/), [vue-testing-library](https://github.com/testing-library/vue-testing-library), [fast-check](https://github.com/dubzzz/fast-check)（Property Based Testing））
 
 <a name="hikky-template-repo"></a>
 
