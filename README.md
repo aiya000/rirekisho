@@ -618,7 +618,7 @@ Web部が担当する全てのプロジェクトで使用する、Nuxt製のテ�
 <!-- }}} -->
 </details>
 
-#### ■■ Virtual AKIBA World
+#### ■■ Virtual AKIBA World（VAW）
 
 - フロントエンド担当（ロジック実装, デザイン実装）, CI/CD, DevOps
 
@@ -627,11 +627,12 @@ JR東日本と協業で、メタバースサービスを開発しました。
 私はアウトゲーム（Webフロントエンド）を担当し、Vue/Nuxtを用いて、ロジック実装とデザイン実装を行いました。  
 この頃まだHIKKYでの全体的な運用が始まったばかりの[Nuxtテンプレートリポジトリ](#hikky-template-repo)を用いて開発し、その設計思想を学ぶことができました。
 
-- [Atomic Design](https://atomicdesign.bradfrost.com/)
-- [vee-validate](https://vee-validate.logaretm.com/v4/)
-- など
+またVAWではユーザーからの入力が随所で発生するため、特に入力のバリデーションに力を入れました。
 
-また仕様に忠実に従いつつ、問題がある箇所や改善点を発見していきました。  
+- [Atomic Design](https://atomicdesign.bradfrost.com/)など
+- [vee-validate（当時はv3）](https://vee-validate.logaretm.com/v3/)
+
+仕様に忠実に従いつつ、問題がある箇所や改善点を発見していきました。  
 Web部内のメンバーおよびプロイジェクトチーム内へ持ち帰り、相談・改善を行いました。  
 
 この結果は、テンプレートリポジトリにも逆輸入する形で、コントリビュートしました。  
@@ -657,27 +658,67 @@ CI/CDの担当も行いました。
 
 [Vket Store](https://store.vket.com/index.html)にて、同様にフロントエンド・CI/CD・DevOpsを担当しました。
 
-本プロジェクトでも、こちらで得た成果を、テンプレートリポジトリに逆輸入しました。
+Vket Storeでもユーザーからの入力（商品販売者からの商品登録等）が発生するため、同様に、そして強力なバリデーションが必要でした。  
+そこで、Web部全体に啓蒙が浸透し始めていたZodと、vee-validate（v4）を採用しました
+
+vee-validate/zodではシンプルな使用方法として`<Field>`と`<ErrorMessage>`コンポーネントがありますが、
+今回はより柔軟なプログラミングが必要だったため、`useField`と`useForm`を使用しました
+
+- [Zod](https://zod.dev/)
+- [vee-validate](https://vee-validate.logaretm.com/v4/)
+- [vee-validate/zod](https://vee-validate.logaretm.com/v4/integrations/zod-schema-validation/)
+
+本プロジェクトで得た成果も、テンプレートリポジトリに逆輸入としてコントリビュートしました。
 
 なお現在、本サービスは終了しており、以下のリンクで当時の様子を確認することができます。
 
 - [@Vket_Store_（Vket Store ブイケットストア 公式） - X（Twitter）](https://x.com/vket_store_)
 - [3Dアバターやアイテムなどを販売できるECサイト「Vket Store」が3月31日にサービス終了へ - MoguLive](https://www.moguravr.com/vket-store-end/)
 
-このプロジェクトの思想は、後述の「アバターメイカー」に引き継がれることになります。
+このプロジェクトの思想は、後述の「[アバターメイカー](#hikky-avatar-maker)」に引き継がれることになります。
 
 #### ■■ Vket 2023 Summer 公式サイト
 
 - フロントエンド担当（ロジック実装）
 
-- TODO: 内容。[Vket 2023 Summer 公式サイト](https://event.vket.com/2023Summer)
-- TODO: ここらでGitHub Actionsの啓蒙が完了し、採用を行った件について
+<div align="center">
+    <img src="./assets/vket2023summer.png" alt="vket2023summer" width="500">
+</div>
 
-#### ■■ HIKKYコーポレートサイト
+[Vket 2023 Summer 公式サイト](https://event.vket.com/2023Summer)にて、サークル参加者向けの管理機能を担当しました。
 
-- フロントエンド担当（ロジック実装）
+このプロジェクトの時点で、会社からGitHub Copilotの有料プランのテストとして、私に先行導入させていただきました。  
+そしてGitHub Copilotには十分な価値があると判断し、会社への報告をしました。  
+その結果、全社的にGitHub Copilot有料プランが導入されることになりました。
 
-- TODO: 内容。[HIKKYコーポレートサイト](https://hikky.co.jp/)
+またこの段階でGitHub Actionsの啓蒙が完了し、
+Web部メンバーに知見が行き渡ったため、
+CI/CD環境としてGitHub Actionsを採用しました。
+
+この頃に、自動テストの本格的導入も完了しました。  
+各プロジェクトでのテストファースト・テストラストの導入はできなかったものの、
+テンプレートリポジトリ（[※a](#hikky-vket2023summer-note1)）でのテストファーストないしテストラストの文化は、
+Web部全体に浸透させることができました。
+
+<a name="hikky-vket2023summer-note1">※a</a>: 当時は、今公開されているものの前バージョンで、こちらは非公開です。
+
+#### ■■ HIKKYコーポレートサイトリニューアル
+
+- フロントエンド担当（ロジック実装, 内部設計・実装）
+
+<div align="center" style="display: flex">
+    <img src="./assets/hikky-corpolate-site-top.png" alt="hikky-corpolate-site-top" height="400">
+    <img src="./assets/hikky-corpolate-site-value.png" alt="hikky-corpolate-site-value" height="400">
+</div>
+
+[HIKKYコーポレートサイト](https://hikky.co.jp/)のリニューアルを行いました。
+
+このプロジェクトではロジックと内部設計（実装）を担当しました。  
+この担当では後続のデザイン実装班が作業をしやすいように、
+必要なコンポーネントを配置・ロジックのみを記述し、
+デザイン実装班は`<template>`の`class`属性と`<style>`を記述するだけで済むようにしました。
+
+<a name="hikky-avatar-maker"></a>
 
 #### ■■ アバターメイカー
 
@@ -699,13 +740,18 @@ TODO
 
 ##### ■■■ その他の技術選定
 
-技術選定で行った主な技術スタックは[「全体で共通した技術スタック」](#hikky-common-tech-stack)で述べましたが、以下の技術も啓蒙しました。
+技術選定で行った主な技術スタックは[「全体で共通した技術スタック」](#hikky-common-tech-stack)などで述べましたが、
+直接の技術スタック以外にも、
+以下の技術も啓蒙しました。
+
 その結果、部内全体でこれらが採用されました。
 
 - [GitHub Copilot](https://docs.github.com/ja/copilot)
 - [Cline](https://github.com/cline/cline)
 
-これらの啓蒙はHIKKYのボードメンバーに伝わったため、有料プランへの加入は会社持ちで行われることになりました。
+これらの啓蒙はHIKKYのボードメンバーに伝わったため、
+有料プランへの加入は会社持ちで行われ、
+使用を望むメンバーに広く配布されることになりました。
 
 ##### ■■■ 社内での発信
 
