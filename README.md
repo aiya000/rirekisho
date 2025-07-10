@@ -119,7 +119,7 @@ NOTE: doctocが'■'をうまく扱えないので、職務経歴の子セクシ
 - **Haskell**, Scala (2, 3), Kotlin, Elm, [Idris](https://www.idris-lang.org/)
 - **TypeScript**, Java, C++ (11, 14, 17), C#, C
 - Python3 (mypy), Clojure, bash, zsh, Vim script
-- HTML, CSS, Sass, Markdown (CommonMark, GitHub Flavor Markdown, Qiita Markdown), Re:VIEW
+- HTML, CSS, Sass, Markdown, Re:VIEW
 - json, json5, yaml, GraphQL
 
 ### TypeScript
@@ -555,7 +555,7 @@ HIKKYではプロジェクトをまたがって技術スタックがほぼ共通
 
 Web部が担当する全てのプロジェクトで使用する、Nuxt製のテンプレートリポジトリの、開発・運用・保守を担当しました。
 
-ひな形をWeb部リーダーが作成していました。
+ひな形をWeb部リーダーが作成していました。  
 その後リーダーと相談しながら、他のメンバーとも意見を積極的に交換し、技術選定を主体的に進めていきました。
 
 大きな動きの具体例としては、以下を実行しました。
@@ -624,20 +624,23 @@ Web部が担当する全てのプロジェクトで使用する、Nuxt製のテ�
 
 JR東日本と協業で、メタバースサービスを開発しました。
 
-私はアウトゲーム（Webフロントエンド）を担当し、Vue/Nuxtを用いて、ロジック実装とデザイン実装を行いました。
+私はアウトゲーム（Webフロントエンド）を担当し、Vue/Nuxtを用いて、ロジック実装とデザイン実装を行いました。  
 この頃まだHIKKYでの全体的な運用が始まったばかりの[Nuxtテンプレートリポジトリ](#hikky-template-repo)を用いて開発し、その設計思想を学ぶことができました。
 
 - [Atomic Design](https://atomicdesign.bradfrost.com/)
 - [vee-validate](https://vee-validate.logaretm.com/v4/)
 - など
 
-また仕様に忠実に従いつつ、問題がある箇所や改善点を発見していきました。
-Web部内のメンバーおよびプロイジェクトチーム内へ持ち帰り、相談・改善を行いました。
+また仕様に忠実に従いつつ、問題がある箇所や改善点を発見していきました。  
+Web部内のメンバーおよびプロイジェクトチーム内へ持ち帰り、相談・改善を行いました。  
 
-CI/CDの担当も行いました。
+この結果は、テンプレートリポジトリにも逆輸入する形で、コントリビュートしました。  
+逆輸入は強制ではなく任意に任せられますが、私はテンプレートを作成することが好きなので、積極的に行いました。
+
+CI/CDの担当も行いました。  
 デプロイ先はAWS LambdaおよびAWS S3で、必要な情報をインフラ担当の方から共有していただき、私は継続的自動デプロイ環境の整備・運用に専念することができました。
 
-本案件でのCI環境は[CircleCI](https://circleci.com/ja/)を採用しました。
+本案件でのCI環境は[CircleCI](https://circleci.com/ja/)を採用しました。  
 この頃は全社的にCircleCIが採用されていたためです。
 
 なお現在はサービスが終了しており、サービス運用中の様子は以下のリンクにて確認することができます。
@@ -652,12 +655,16 @@ CI/CDの担当も行いました。
 
 - フロントエンド担当（ロジック実装, 一部デザイン実装）
 
-TODO: 内容
+[Vket Store](https://store.vket.com/index.html)にて、同様にフロントエンド・CI/CD・DevOpsを担当しました。
 
-- サービス終了
+本プロジェクトでも、こちらで得た成果を、テンプレートリポジトリに逆輸入しました。
 
-- https://store.vket.com/index.html
-- https://www.moguravr.com/vket-store-end/
+なお現在、本サービスは終了しており、以下のリンクで当時の様子を確認することができます。
+
+- [@Vket_Store_（Vket Store ブイケットストア 公式） - X（Twitter）](https://x.com/vket_store_)
+- [3Dアバターやアイテムなどを販売できるECサイト「Vket Store」が3月31日にサービス終了へ - MoguLive](https://www.moguravr.com/vket-store-end/)
+
+このプロジェクトの思想は、後述の「アバターメイカー」に引き継がれることになります。
 
 #### ■■ Vket 2023 Summer 公式サイト
 
