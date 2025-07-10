@@ -153,8 +153,33 @@ NOTE: doctocが'■'をうまく扱えないので、職務経歴の子セクシ
 
 ### Haskell
 
-- 知識: Extensible Effects, Effect Monad, 依存型, メタプログラミング（TemplateHaskell, QuasiQuotes）, 各種GHC拡張, [Algebraic Effects](https://koka-lang.github.io/koka/doc/index.html)
-- ライブラリ: **lens**, **Parsec**, **QuickCheck**, rio, mtl, Servant, freer-effects
+Haskellでは、多くの言語でライブラリ実装ないし言語仕様での実装がのちにされることになる、多くのComputer Sienceの概念を学びました。
+
+- 主要な成果物
+    - [hs-time-script: Time script = Vim script + static typing - GitHub](https://github.com/aiya000/hs-time-script)
+    - [hs-zuramaru: Lisp方言ずら〜。え！？ これを使えばQuasiQuotesでコンパイル時Lispが書けるずら！？ - GitHub](https://github.com/aiya000/hs-zuramaru)
+    - [haskell\_de_\groupstructure: Haskellでわかる群論の代数的構造 - GitHub](https://github.com/aiya000/haskell_de_groupstructure)
+    - [aiya000.github.io-old: 旧ブログ - GitHub](https://github.com/aiya000/aiya000.github.io-old)
+    - [その他Haskellのリポジトリ - GitHub](https://github.com/aiya000?tab=repositories&q=hs-&type=&language=&sort=)
+
+- 知識・ライブラリ・言語
+    - [**parsec**](https://hackage.haskell.org/package/parsec) -- 他言語から参照される、Parsecの出典。代表的なパーサーコンビネーターライブラリ
+        - [megaparsec](https://hackage.haskell.org/package/megaparsec), [trifecta](https://hackage.haskell.org/package/trifecta) -- 直近ではこちらのモダンな実装を使用しました
+    - [**QuickCheck**](https://hackage.haskell.org/package/QuickCheck) -- Property Based Testingの出典（原点）であり、他言語からも参照される、代表的なテスティングライブラリ
+    - [**lens**](https://hackage.haskell.org/package/lens) -- lens（データ構造への一般的（汎用的）なGetter/Setter）の出典であり、こちらも多言語から参照される、
+    - [**Extensible Effects**](https://hackage.haskell.org/package/extensible-effects) -- 同名の概念であるExtensible Effectsの出典
+        - [freer-effects](https://hackage.haskell.org/package/freer-effects) -- Extensible Effectsの実用的な実装です
+    - [Effect Monad](https://hackage.haskell.org/package/effect-monad) -- {Foo} Effects のひとつ
+    - その他ライブラリ
+        - profunctors, rio, mtl, Servant, doctest, tasty, smallcheck, hunit
+    - 依存型, , メタプログラミング（TemplateHaskell, QuasiQuotes）
+    - [各種GHC拡張](https://downloads.haskell.org/ghc/latest/docs/users_guide/exts/table.html)
+        - 例:
+            - DataKinds, PolyKinds, ConstraintKinds, TypeFamilies, TypeOperators
+            - GADTs, ExistentialQuantification, DerivingStrategies, GeneralizedNewtypeDeriving, MultiParamTypeClasses
+            - RankNTypes, ScopedTypeVariables, TypeApplications
+            - BangPatterns, DuplicateRecordFields, ViewPatterns
+            - TemplateHaskell, QuasiQuotes, OverloadedStrings, NamedFieldPuns
 
 - その他
     - [Eta Programming Language - Haskell on the JVM](https://eta-lang.org)
