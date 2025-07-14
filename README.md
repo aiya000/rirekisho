@@ -531,9 +531,9 @@ Python3から[Audio Weaver](https://w.dspconcepts.com/audio-weaver) Serverにリ
 
 ### ■ 株式会社HIKKY : 2022-01 ～ 2025-05
 
-- 職務: フロントエンドスペシャリスト, CI/CD, DevOps
+- 職務: フロントエンドスペシャリスト, CI/CD
 
-HIKKYではCI/CIとDevOpsを除き、Webフロントエンドに集中して従事していたため、Webフロントエンドの技術を今まで以上に深く学ぶことができました。
+HIKKYではCI/CIを除き、Webフロントエンドに集中して従事していたため、Webフロントエンドの技術を今まで以上に深く学ぶことができました。
 
 <a name="hikky-common-tech-stack"></a>
 
@@ -548,6 +548,14 @@ HIKKYではプロジェクトをまたがって技術スタックがほぼ共通
     - [vee-validate](https://vee-validate.logaretm.com/v4/), [vee-validate/zod](https://vee-validate.logaretm.com/v4/integrations/zod-schema-validation/)
     - ESLint, [typescript-eslint](https://typescript-eslint.io/), Prettier（新しい環境では[ESLint Stylistic](https://eslint.style/)）
     - Vitest（[vue-test-utils](https://test-utils.vuejs.org/), [vue-testing-library](https://github.com/testing-library/vue-testing-library), [fast-check](https://github.com/dubzzz/fast-check)（Property Based Testing））
+
+また、
+全てのプロジェクトでIssue駆動開発（[※1](#what-is-issue-driven-development)）が使われていました。
+
+開発はシンプル化されたgitフローが採用されました。  
+これはgitフローからreleaseブランチが省かれたもので、
+「`main <- develop <- 各featureブランチ`, `main <- 各hotfixブランチ`」のような関係性で、
+マージが行われていました。
 
 <a name="hikky-template-repo"></a>
 
@@ -620,7 +628,7 @@ Web部が担当する全てのプロジェクトで使用する、Nuxt製のテ�
 
 #### ■■ Virtual AKIBA World（VAW）
 
-- フロントエンド担当（ロジック実装, デザイン実装）, CI/CD, DevOps
+- フロントエンド担当（ロジック実装, デザイン実装）, CI/CD
 
 JR東日本と協業で、メタバースサービスを開発しました。
 
@@ -656,7 +664,7 @@ CI/CDの担当も行いました。
 
 - フロントエンド担当（ロジック実装, 一部デザイン実装）
 
-[Vket Store](https://store.vket.com/index.html)にて、同様にフロントエンド・CI/CD・DevOpsを担当しました。
+[Vket Store](https://store.vket.com/index.html)にて、同様にフロントエンド・CI/CDを担当しました。
 
 Vket Storeでもユーザーからの入力（商品販売者からの商品登録等）が発生するため、同様に、そして強力なバリデーションが必要でした。  
 そこで、Web部全体に啓蒙が浸透し始めていたZodと、vee-validate（v4）を採用しました
@@ -682,7 +690,7 @@ vee-validate/zodではシンプルな使用方法として`<Field>`と`<ErrorMes
 - フロントエンド担当（ロジック実装）
 
 <div align="center">
-    <img src="./assets/vket2023summer.png" alt="vket2023summer" width="500">
+    <img src="./assets/vket2023summer.png" alt="vket2023summer" width="700">
 </div>
 
 [Vket 2023 Summer 公式サイト](https://event.vket.com/2023Summer)にて、サークル参加者向けの管理機能を担当しました。
@@ -697,7 +705,7 @@ CI/CD環境としてGitHub Actionsを採用しました。
 
 この頃に、自動テストの本格的導入も完了しました。  
 各プロジェクトでのテストファースト・テストラストの導入はできなかったものの、
-テンプレートリポジトリ（[※a](#hikky-vket2023summer-note1)）でのテストファーストないしテストラストの文化は、
+テンプレートリポジトリ（[※a](#hikky-vket2023summer-note1)）での「テストファーストもしくはテストラストを行う」という文化は、
 Web部全体に浸透させることができました。
 
 <a name="hikky-vket2023summer-note1">※a</a>: 当時は、今公開されているものの前バージョンで、こちらは非公開です。
@@ -718,23 +726,109 @@ Web部全体に浸透させることができました。
 必要なコンポーネントを配置・ロジックのみを記述し、
 デザイン実装班は`<template>`の`class`属性と`<style>`を記述するだけで済むようにしました。
 
+デザイン実装班とロジック実装班で分業をする体制について、
+またチーム内で分業をする体制について、
+どのように動けばいいか、
+ノウハウを高めることができました。
+
 <a name="hikky-avatar-maker"></a>
 
 #### ■■ アバターメイカー
 
-- フロントエンド担当（ロジック実装, 一部のデザイン実装）
+- フロントエンド担当（ロジック実装, 一部のデザイン実装）, CI/CD
 
-- TODO: サービス内容について -> [アバターメイカー](https://avatarmaker.vket.com/)
+<div align="center">
+    <img src="./assets/avatar-maker-top.png" alt="avatar-maker-top" width="400">
+    <img src="./assets/avatar-maker-store-list.png" alt="avatar-maker-store-list" width="400">
+</div>
 
-このサービスは特にインゲームとアウトゲーム・フロントエンドとバックエンドの相互連携が重要だったため、アウトゲーム・フロントエンド担当として、他プロジェクトよりもさらに積極的にコミュニケーションを撮りました。
+[アバターメイカー（Avatar Maker）](https://avatarmaker.vket.com/)はVRChat・vrm向けに、
+PC・スマホのWebブラウザのみで、
+アバターを作成できるサービスです。
 
-- TODO: アジャイル開発について
+このプロジェクトの途中から、
+[現行（V2）のNuxtテンプレートリポジトリ](#hikky-template-repo)を使用し始めました。  
+移行前にも本プロジェクトの開発は始まっていたため、
+既存の成果物の移行をしつつのアップグレードが必要でした。  
+私がアップグレードを担当しました。
+
+このサービスは特にインゲームとアウトゲーム・フロントエンドとバックエンドの相互連携が重要だったため、
+アウトゲーム・フロントエンド担当として、
+他プロジェクトよりもさらに積極的に**コミュニケーション**を撮りました。
+
+また、
+そのインゲームとアウトゲームの連携の**アーキテクト**を担当しました。  
+ここではNuxtのエコシステム・設計を使用しつつ、
+`window`オブジェクトを介したUnityとの連携をすることが必須だったので悩みどころでした。  
+そこでVueのcomposablesのオブジェクトが普遍的なデザインであることに着目し、
+結果的に、
+Unityから使用しても違和感のない設計をすることができました。
+
+<!-- composablesって結局、classの部分集合だと思うんですよね。 -->
+
+バックエンドとフロントエンドのやり取りをするためのモデル層の生成を自動化するために、
+[openapi-zod-client](https://github.com/astahmer/openapi-zod-client)の使用を提案しました。  
+結果採用され、
+git-submodulesと設定ファイルを連携させて、
+ワンコマンドで`models/{submodule名/openapi設定ファイル名}.ts`を生成できるように実装しました。
+
+細かいスクリプト類は、
+bunスクリプト（`bun run foo.mts`）として記述しました。
+
+このプロジェクトは短納期が求められたため、
+負債の発生が多発しました。  
+私は**負債の返済（リファクタリング）が得意であり、知見があったため**、
+率先してそれを実行しました。  
+また**レビュー**でも、
+型安全性が遵守されていない・
+個人の裁量を超える量で不必要な処理が書かれている・
+などを**やんわり**指摘し、
+修正を促しました。
+
+このプロジェクトは、少数精鋭の、なんちゃってアジャイル開発で進められました。  
+当初はアジャイル開発ではなく、
+暗黙的なウォーターフォール開発で進められていましたが、
+プロジェクト内で問題提起とアジャイル開発への**移行を提案**し、
+アジャイル開発へ移行しました。
 
 #### ■■ VketCloudのJavaScript向け拡張エンジン
 
-VketCloudのJavaScript向け拡張エンジン（一般非公開）
+- アーキテクト, ライブラリ実装
 
-TODO
+<div align="center">
+    <img src="./assets/vketcloud.png" alt="vketcloud" width="700">
+</div>
+
+[VketCloud](https://cloud.vket.com/)のJavaScript向け拡張エンジン（一般非公開）を開発・運用・保守しました。
+
+VketCloudとはHIKKY製のメタバースプラットフォームです。  
+そのインゲームから外界へのやりとりなど、
+ブラウザ経由で何かしらを行うための機能を提供するのが、
+この拡張エンジン（ライブラリ）でした。  
+
+このライブラリはTypeScriptで記述され、
+VketCloud上ではコンパイルされたJavaScriptとして実行されます。
+
+このプロジェクトは技術において、
+実に野心的なプロジェクトでした。  
+特にアーキテクチャやプログラミングスタイルとして、
+以下の特徴が挙げられます。
+
+- 関数型プログラミング
+    - ライブラリが使うライブラリとしてコンビネーター（細かい、汎用的な関数）群を定義し、拡張エンジンライブラリ側は全てボイラープレートのみの記述で済む
+- TypeScriptの強い静的型付き言語としての利用
+    - TypeScriptは漸進的型付けですので、
+      通常は強い静的型付けとして扱われません。  
+      ですが本プロジェクトでは多くのeslintルールや、
+      前述の内側のライブラリへの厳しいレビューをもって、
+      強い静的型付けの特徴を引き出しました
+    - ジェネリクスの積極的活用（静的に解決できることは実行時に持ち込まない）
+    - 関数のカリー化による、型引数（ジェネリクス）の部分適用
+    - **`any`と`as`は使わない**
+
+このプロジェクトは少数精鋭の、
+前述の「特徴」に挙げられたものに秀でているメンバーによって構成され、
+アーキテクチャは継続的に改善されました。
 
 #### ■■ その他、プロジェクト外での活動
 
