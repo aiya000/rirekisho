@@ -662,7 +662,7 @@ CI/CDの担当も行いました。
 
 #### ■■ Vket Store
 
-- フロントエンド担当（ロジック実装, 一部デザイン実装）
+- フロントエンド担当（ロジック実装, 一部デザイン実装）, CI/CD
 
 [Vket Store](https://store.vket.com/index.html)にて、同様にフロントエンド・CI/CDを担当しました。
 
